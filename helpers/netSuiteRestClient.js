@@ -1,21 +1,3 @@
-Skip to content
- 
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- @brycekrahMHI Sign out
-6
-12 26 tvrdytom/netsuite-upload
- Code  Issues 10  Pull requests 5  Projects 0  Wiki  Insights
-netsuite-upload/helpers/netSuiteRestClient.js
-a409a6a  on Aug 6, 2017
-@JonnyBoy333 JonnyBoy333 Added Oath feature
-@tvrdytom @JonnyBoy333
-      
-157 lines (136 sloc)  5.87 KB
 let vscode = require('vscode');
 let RestClient = require('node-rest-client').Client;
 let OAuth = require('oauth-1.0a');
@@ -172,16 +154,3 @@ exports.getFile = getFile;
 exports.postFile = postFile;
 exports.deleteFile = deleteFile;
 exports.getDirectory = getDirectory;
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Press h to open a hovercard with more details.
