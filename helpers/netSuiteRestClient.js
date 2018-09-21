@@ -1,5 +1,25 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @brycekrahMHI Sign out
+6
+12 26 tvrdytom/netsuite-upload
+ Code  Issues 10  Pull requests 5  Projects 0  Wiki  Insights
+netsuite-upload/helpers/netSuiteRestClient.js
+a409a6a  on Aug 6, 2017
+@JonnyBoy333 JonnyBoy333 Added Oath feature
+@tvrdytom @JonnyBoy333
+      
+157 lines (136 sloc)  5.87 KB
 let vscode = require('vscode');
 let RestClient = require('node-rest-client').Client;
+let OAuth = require('oauth-1.0a');
+let crypto  = require('crypto');
 
 function getRelativePath(absFilePath) {
     return absFilePath.slice(vscode.workspace.rootPath.length);
@@ -26,6 +46,29 @@ function getData(type, objectPath, callback) {
     };
 
     var baseRestletURL = vscode.workspace.getConfiguration('netSuiteUpload')['restlet'];
+
+    // Support for Oath authentication
+    if (!args.headers.Authorization) {    
+        var oauth = OAuth({
+            consumer: {
+                key: vscode.workspace.getConfiguration('netSuiteUpload')['netsuite-key'],
+                secret: vscode.workspace.getConfiguration('netSuiteUpload')['netsuite-secret']
+            },
+            signature_method: 'HMAC-SHA1',
+            hash_function: function(base_string, key) {
+                return crypto.createHmac('sha1', key).update(base_string).digest('base64');
+            }
+        });
+        var token = {
+            key: vscode.workspace.getConfiguration('netSuiteUpload')['consumer-token'],
+            secret: vscode.workspace.getConfiguration('netSuiteUpload')['consumer-secret']
+        };
+        var headerWithRealm = oauth.toHeader(oauth.authorize({ url: baseRestletURL, method: 'POST' }, token));
+        headerWithRealm.Authorization += ', realm="' + vscode.workspace.getConfiguration('netSuiteUpload')['realm'] + '"';
+        headerWithRealm['Content-Type'] = 'application/json';
+        args.headers = headerWithRealm;
+    }
+
     client.get(baseRestletURL + '&type=' + type + '&name=${name}', args, function (data) {
         callback(data);
     });
@@ -50,8 +93,30 @@ function postData(type, objectPath, content, callback) {
             content: content
         }
     };
-
+    
     var baseRestletURL = vscode.workspace.getConfiguration('netSuiteUpload')['restlet'];
+
+    // Support for Oath authentication
+    if (!args.headers.Authorization) {    
+        var oauth = OAuth({
+            consumer: {
+                key: vscode.workspace.getConfiguration('netSuiteUpload')['netsuite-key'],
+                secret: vscode.workspace.getConfiguration('netSuiteUpload')['netsuite-secret']
+            },
+            signature_method: 'HMAC-SHA1',
+            hash_function: function(base_string, key) {
+                return crypto.createHmac('sha1', key).update(base_string).digest('base64');
+            }
+        });
+        var token = {
+            key: vscode.workspace.getConfiguration('netSuiteUpload')['consumer-token'],
+            secret: vscode.workspace.getConfiguration('netSuiteUpload')['consumer-secret']
+        };
+        var headerWithRealm = oauth.toHeader(oauth.authorize({ url: baseRestletURL, method: 'POST' }, token));
+        headerWithRealm.Authorization += ', realm="' + vscode.workspace.getConfiguration('netSuiteUpload')['realm'] + '"';
+        headerWithRealm['Content-Type'] = 'application/json';
+        args.headers = headerWithRealm;
+    }
     client.post(baseRestletURL, args, function (data) {
         callback(data);
     });
@@ -74,6 +139,29 @@ function deletetData(type, objectPath, callback) {
     };
 
     var baseRestletURL = vscode.workspace.getConfiguration('netSuiteUpload')['restlet'];
+
+    // Support for Oath authentication
+    if (!args.headers.Authorization) {    
+        var oauth = OAuth({
+            consumer: {
+                key: vscode.workspace.getConfiguration('netSuiteUpload')['netsuite-key'],
+                secret: vscode.workspace.getConfiguration('netSuiteUpload')['netsuite-secret']
+            },
+            signature_method: 'HMAC-SHA1',
+            hash_function: function(base_string, key) {
+                return crypto.createHmac('sha1', key).update(base_string).digest('base64');
+            }
+        });
+        var token = {
+            key: vscode.workspace.getConfiguration('netSuiteUpload')['consumer-token'],
+            secret: vscode.workspace.getConfiguration('netSuiteUpload')['consumer-secret']
+        };
+        var headerWithRealm = oauth.toHeader(oauth.authorize({ url: baseRestletURL, method: 'POST' }, token));
+        headerWithRealm.Authorization += ', realm="' + vscode.workspace.getConfiguration('netSuiteUpload')['realm'] + '"';
+        headerWithRealm['Content-Type'] = 'application/json';
+        args.headers = headerWithRealm;
+    }
+
     client.delete(baseRestletURL + '&type=' + type + '&name=${name}', args, function (data) {
         callback(data);
     });
@@ -84,3 +172,16 @@ exports.getFile = getFile;
 exports.postFile = postFile;
 exports.deleteFile = deleteFile;
 exports.getDirectory = getDirectory;
+© 2018 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Press h to open a hovercard with more details.
