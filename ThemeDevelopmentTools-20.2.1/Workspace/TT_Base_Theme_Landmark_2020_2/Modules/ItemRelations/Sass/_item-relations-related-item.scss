@@ -1,0 +1,40 @@
+.item-relations-related-item{
+	height:250px;
+	width:228px;
+}
+
+.item-relations-related-item-thumbnail {
+	@extend .item-cell-link-image;
+	overflow: hidden;
+	margin-bottom: $sc-margin-lv2;
+
+	img {
+		@extend .item-cell-image;
+	}
+}
+
+
+.item-relations-related-item-title{
+	@extend .small-title-navigable;
+	text-align: center;
+	margin-bottom: $sc-margin-lv2;
+	display: block;
+	position: relative;
+}
+
+
+.item-relations-related-item-price{
+	@extend .small-price;
+	margin-bottom:$sc-margin-lv2;
+	position:relative;
+}
+
+.item-relations-related-item-rate{
+	margin-bottom:$sc-margin-lv2;
+	display: inline-block;
+	text-align:center;
+	.global-views-star-rating{
+		width:auto; // 92px
+		margin:auto;
+	}
+}

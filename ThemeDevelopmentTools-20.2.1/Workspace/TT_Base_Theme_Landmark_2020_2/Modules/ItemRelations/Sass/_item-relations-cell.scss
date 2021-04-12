@@ -1,0 +1,10 @@
+.item-relations-cell {
+    text-align: center;
+}
+
+// Tavano Team Overrides - NS Item Badges Extension
+.item-relations-cell {
+	.itembadges-container {
+		padding: $sc-padding-lv3;
+    }
+}

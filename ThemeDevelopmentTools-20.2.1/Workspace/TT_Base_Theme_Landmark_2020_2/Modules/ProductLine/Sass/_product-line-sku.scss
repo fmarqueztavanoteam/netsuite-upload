@@ -1,0 +1,11 @@
+.product-line-sku-container {
+	margin-bottom: $sc-margin-lv1;
+	text-transform: uppercase;
+	font-weight: $sc-font-weight-semibold;
+}
+.product-line-sku-value {
+	@extend .sc-sku-value;
+}
+.product-line-sku-label {
+	@extend .sc-sku-label;
+}

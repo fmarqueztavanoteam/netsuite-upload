@@ -1,0 +1,29 @@
+.header-logo {
+	display: block;
+
+	@media (max-width: $screen-xs-min) {
+		max-width: 100%;
+	}
+
+	@media (min-width: $screen-sm-min) {
+		width: 100%;
+		margin: 0px;
+	}
+
+	@media (min-width: $screen-md-min) {
+		line-height: $tt-header-logo-height;
+	}
+}
+
+.header-logo-image {
+	width: 90%;
+	max-width: $tt-header-logo-max-width;
+	max-height: $tt-header-logo-height;
+	vertical-align: middle;
+
+	@media (min-width: $screen-md-min) {
+		width: auto;
+	}
+}
+
+

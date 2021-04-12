@@ -1,0 +1,110 @@
+.facets-item-cell-grid {
+	@extend .item-cell;
+	.cart-add-to-cart-button-container {
+		width:100%;
+	}
+	.cart-add-to-cart-button-button {
+		@extend .button-small;
+		margin-top: 0;
+		float: left;
+	}
+
+	.cart-add-to-cart-button-container {
+		margin-bottom: $sc-margin-lv2;
+		padding: 0;
+	}
+
+	.cart-quickaddtocart-price {
+		.product-views-price {
+			margin-bottom: $sc-margin-lv2;
+		}
+	}
+
+	.product-line-stock-description-msg-description {
+		margin-top: 0;
+	}
+}
+
+.facets-item-cell-grid-quick-view-wrapper {
+	@extend .item-cell-quick-view-wrapper;
+}
+
+.facets-item-cell-grid-quick-view-link {
+	@extend .item-cell-quick-view-link;
+}
+
+.facets-item-cell-grid-image-wrapper {
+	@extend .item-cell-image-wrapper;
+}
+
+.facets-item-cell-grid-link-image {
+	@extend .item-cell-link-image;
+}
+
+.facets-item-cell-grid-details {
+	text-align:left;
+	.product-line-stock {
+		text-align:left;
+	}
+}
+
+.facets-item-cell-grid-image {
+	@extend .item-cell-image;
+}
+
+.facets-item-cell-grid-title {
+	@extend .item-cell-title;
+}
+
+.facets-item-cell-grid-sku {
+	@extend .item-cell-sku;
+}
+
+.facets-item-cell-grid-sku-title {
+	@extend .item-cell-sku-title;
+}
+
+.facets-item-cell-grid-mpn { // Tavano Team - Facets Items Info Extension
+	.facets-item-cell-mpn {
+		@extend .item-cell-sku;
+	}
+	.facets-item-cell-mpn-title {
+		@extend .item-cell-sku-title;
+	}
+}
+
+.facets-item-cell-grid-price {
+	@extend .small-price;
+}
+
+.facets-item-cell-grid-rating {
+	text-align:left;
+	display: inline-block;
+}
+
+.facets-item-cell-grid {
+	.global-views-star-rating-area {
+		margin-bottom:$sc-margin-lv2;
+	}
+}
+
+.facets-item-cell-grid-stock-message {
+	text-align:left;
+}
+
+.facets-item-cell-grid-minimum-quantity { // Tavano Team - Facets Items Info Extension
+	.facets-item-cell-minimum-quantity {
+		@extend .item-cell-minimum-quantity;
+	}
+}
+
+// Tavano Team Overrides - NS Item Badges Extension
+.facets-item-cell-grid {
+	.itembadges-container {
+		padding: $sc-padding-lv3;
+	}
+	.itembadges-container-top-right {
+		width: 100%;
+		right: 0 !important;
+	}
+}

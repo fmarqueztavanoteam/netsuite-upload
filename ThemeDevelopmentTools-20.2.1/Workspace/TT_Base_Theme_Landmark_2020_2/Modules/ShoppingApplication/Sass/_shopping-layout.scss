@@ -1,0 +1,26 @@
+.shopping-layout {
+	@extend %sc-layout;
+}
+
+// .shopping-layout-header {}
+
+.shopping-layout-footer {
+	@extend %sc-footer !optional;
+}
+
+.shopping-layout-breadcrumb {
+	width: 100%;
+}
+
+.shopping-layout-notifications {
+	@extend .container;
+}
+
+.shopping-layout-no-javascript-msg {
+	@extend .message-warning;
+	width: 100%;
+}
+
+.shopping-layout-content > div:not(#home-page):not(#cms-landing-page) {
+	margin-top: $sc-margin-lv4;
+}

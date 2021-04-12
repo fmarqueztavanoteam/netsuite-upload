@@ -1,0 +1,24 @@
+.checkout-layout {
+	@extend %sc-layout;
+}
+
+// .checkout-layout-header {}
+
+.checkout-layout > #main-container {
+	margin-top: $sc-margin-lv4;
+}
+
+.checkout-layout-content, .checkout-layout-notifications{
+	@extend .container;
+}
+
+.checkout-layout-footer {
+	@extend %sc-footer !optional;
+}
+
+
+
+.checkout-layout-no-javascript-msg {
+	@extend .message-warning;
+	width: 100%;
+}

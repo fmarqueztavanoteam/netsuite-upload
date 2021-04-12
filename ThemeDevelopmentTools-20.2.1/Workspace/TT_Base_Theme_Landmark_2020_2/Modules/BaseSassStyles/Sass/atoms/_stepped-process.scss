@@ -1,0 +1,140 @@
+// Stepped process
+//
+// Steps are needed when users need to go through a process of multiple sub-tasks to achieve one main goal.
+// Steps help indicate to users how long the process will take, which steps are already completed and, how many steps are left in order to complete the task.
+//
+// Markup:
+// <div class="stepped-process">
+//   <a data-action="previous-step" class="stepped-process-button-back">
+//     <i></i>
+//     Previous
+//   </a>
+//   <ol class="stepped-process-menu">
+//     <li class="stepped-process-step">
+//       <a class="stepped-process-step-anchor" href="#">
+//         1 <span class="wizard-step-navigation-step-anchor-label">Shipping Address</span>
+//       </a>
+//     </li>
+//     <li class="stepped-process-divider">/</li>
+//     <li class="stepped-process-step">
+//       <a class="stepped-process-step-anchor stepped-process-step-active" href="#">
+//         2 <span class="wizard-step-navigation-step-anchor-label">Payment</span>
+//       </a>
+//     </li>
+//     <li class="stepped-process-divider">/</li>
+//     <li class="stepped-process-step">
+//       <a class="stepped-process-step-anchor stepped-process-step-disabled" href="#">
+//         3 <span class="wizard-step-navigation-step-anchor-label">Review</span>
+//       </a>
+//     </li>
+//   </ol>
+// </div>
+//
+// Styleguide 2.7.2
+
+.stepped-process {
+	@include clearfix();
+}
+
+.stepped-process-button-back {
+	@extend .button-back;
+	float: left;
+	margin-bottom: 0;
+	cursor: pointer;
+
+	> i {
+		@extend .button-back-icon;
+	}
+}
+
+.stepped-process-menu {
+	float: right;
+	position: relative;
+
+	@media (min-width: $screen-sm-min) {
+		float: none;
+	}
+}
+
+.stepped-process-step {
+	display: inline-block;
+}
+
+.stepped-process-step-anchor {
+	@extend .small-title-viewonly;
+	display: block;
+	line-height: 24px;
+	text-align: center;
+	color: $sc-color-copy;
+}
+
+.stepped-process-step-active {
+	color: $sc-color-copy;
+	cursor: default;
+
+	&:hover, &:visited, &:focus {
+		color: $sc-color-copy;
+	}
+
+	@media (min-width: $screen-sm-min) {
+		color: $sc-color-copy;
+
+		&:hover, &:focus {
+			color: $sc-color-copy;
+		}
+	}
+}
+
+.stepped-process-step-disabled {
+	color: $sc-color-copy;
+	cursor: default;
+
+	&:hover, &:visited, &:focus{
+		color: $sc-color-copy;
+	}
+}
+
+.stepped-process-step-anchor-label {
+	margin-right: $sc-margin-lv3;
+	text-indent: -5px;
+	overflow-x: hidden;
+	vertical-align: middle;
+}
+
+.stepped-process-step-anchor-counter {
+	@include border-radius(100%);
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border: 3px solid $sc-color-theme-900;
+	color: $sc-color-theme-100;
+	line-height: 19px;
+	margin-left: $sc-margin-lv2;
+	text-align: center;
+	background-color: $sc-color-theme-900;
+	@media (min-width: $screen-sm-min) {
+		margin-left: 0;
+		margin-right: $sc-margin-lv1;
+	}
+}
+.stepped-process-step-anchor-counter-disabled {
+	background-color: $sc-color-theme-500;
+	border-color: $sc-color-theme-500;
+}
+.stepped-process-step-anchor-counter-active {
+	background-color: $sc-color-primary;
+	border-color: $sc-color-primary;
+}
+
+.stepped-process-divider {
+	color: $sc-color-theme-500;
+}
+
+.stepped-process-step-anchor-label,
+.stepped-process-divider {
+	display: none;
+
+	@media (min-width: $screen-sm-min) {
+		display: inline-block;
+	}
+}

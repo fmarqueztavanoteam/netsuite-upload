@@ -1,0 +1,134 @@
+footer {
+    p, span {
+        font-size: $tt-footer-text-font-size;
+        color: $sc-footer-text-color;
+    }
+
+    a {
+        font-size: $tt-footer-link-font-size;
+        color: $sc-footer-link-color;
+
+        &:hover {
+            color: $sc-footer-link-color-hover;
+        }
+
+        &:active,
+        &:focus {
+            color: $sc-footer-link-color-active;
+        }
+    }
+
+    .footer-content-column-header, h1, h2, h3, h4, h5, h6 {
+        font-size: $tt-footer-headings-font-size;
+        font-weight: $sc-font-weight-semibold;
+        color: $sc-footer-headings-color;
+    }
+
+    .footer-content-column-description {
+        margin-top: $sc-margin-lv3;
+    }
+
+    input {
+        background: $sc-footer-fields-background-color;
+        border: 1px solid $sc-footer-fields-border-color;
+        color: $sc-footer-fields-text-color;
+        @include placeholder { color: $tt-footer-fields-text-placeholder-color; }
+    }
+}
+
+.footer-content {
+    background: $sc-footer-background-color;
+    border-top: 1px solid $sc-footer-border-color;
+    color: $sc-footer-text-color;
+}
+
+.footer-content-container{
+    @extend .container;
+    @extend .row;
+    margin: auto;
+    padding: $sc-padding-lv6 0 0;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    
+    @media (min-width: $screen-sm-min) {
+        padding-top: $sc-padding-lv5;
+        padding-bottom: $sc-padding-lv5;
+    }
+}
+
+.footer-content-newsletter {
+    @extend .clearfix;
+    margin-top: $sc-margin-lv3;
+}
+
+.footer-content-column {
+    line-height: 1;
+
+    > li:not(.footer-content-column-header) {
+        margin-top: $sc-margin-lv3;
+    }
+    p, a, span {
+        vertical-align: middle;
+    }
+}
+
+// Bottom Footer
+.footer-content-bottom {
+    background: $tt-footer-copyright-background-color;
+	border-top: 1px solid $tt-footer-copyright-border-color;
+    color: $sc-footer-copyright-text-color;
+    
+    .footer-content-bottom-container {
+        @extend .container;
+        @extend .row;
+        margin: auto;
+
+		@media (max-width: $screen-xs-max) {
+            text-align: center;
+        }
+    }
+    .footer-content-bottom-copyright {
+        float: left;
+		margin: $sc-margin-lv4 auto;
+		font-size: $tt-footer-text-font-size;
+		line-height: 21px;
+
+		@media (max-width: $screen-xs-max) {
+            float: none;
+        }
+    }
+}
+
+// Bottom Footer - Credit Cards
+.footer-bottom-content-payment-cards {
+    float: right;
+    
+    @media (max-width: $screen-xs-max) {
+        float: none;
+    }
+
+	img {
+		display: inline-block;
+		height: auto;
+		width: 45px;
+		margin-top: 16px;
+		margin-bottom: 10px;
+		margin-left: $sc-margin-lv2;
+
+        &:first-of-type { margin-left: 0px; }
+        
+        @media (max-width: $screen-sm-max) {
+            width: 35px;
+			margin-top: $sc-margin-lv4;
+        }
+        @media (max-width: $screen-xs-max) {
+            margin-top: 0px;
+			margin-bottom: $sc-margin-lv4;
+        }
+	}
+}

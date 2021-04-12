@@ -1,0 +1,19 @@
+.header-simplified-header {
+	background-color: $sc-header-background-color;
+}
+
+.header-simplified-header-logo {
+	padding-top: $sc-padding-lv3;
+	padding-bottom: $sc-padding-lv3;
+	text-align: center;
+
+	.header-logo {
+		line-height: $tt-simplified-header-logo-height;
+	}
+
+	.header-logo-image{
+		width: auto;
+		max-height: $tt-simplified-header-logo-height;
+	}
+}
+

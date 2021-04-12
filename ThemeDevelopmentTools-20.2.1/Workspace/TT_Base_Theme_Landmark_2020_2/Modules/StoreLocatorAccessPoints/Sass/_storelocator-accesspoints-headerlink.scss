@@ -1,0 +1,25 @@
+.storelocator-accesspoints-headerlink-link {
+	float:left;
+	@media(min-width: $screen-sm-min) {
+		float:none;
+	}
+}
+
+
+.storelocator-accesspoints-headerlink-link-icon {
+	@extend .icon-map-marker;
+	position:relative;
+	top:10px;
+	@media(min-width: $screen-sm-min) {
+		float:none;
+		margin-right:$sc-margin-lv2;
+		position:static;
+	}
+}
+
+.storelocator-accesspoints-headerlink-link-text {
+	display:none;
+	@media(min-width: $screen-sm-min) {
+		display: inline-block;
+	}
+}

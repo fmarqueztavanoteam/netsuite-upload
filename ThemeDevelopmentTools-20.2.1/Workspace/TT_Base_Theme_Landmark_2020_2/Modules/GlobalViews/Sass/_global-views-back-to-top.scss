@@ -1,0 +1,26 @@
+.global-views-back-to-top {
+    background: $tt-footer-backtotop-background-color;
+    border-top: 1px solid $tt-footer-backtotop-border-color;
+    display: block;
+    text-align:center;
+    padding-bottom: $sc-padding-lv3;
+
+    @media (min-width: $screen-sm-min) {
+        display: none;
+    }
+}
+.global-views-back-to-top a {
+    text-transform: uppercase;
+    color: $sc-footer-backtotop-text-color;
+}
+.global-views-back-to-top a:hover {
+    color: $sc-footer-backtotop-text-color;
+    text-decoration: none;
+}
+.global-views-back-to-top-icon {
+    @extend .icon-angle-up;
+    color: $sc-footer-backtotop-text-color;
+    display: block;
+    font-size: 22px;
+    padding: $sc-padding-lv2 0 0;
+}

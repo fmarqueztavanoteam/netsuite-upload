@@ -1,0 +1,15 @@
+.cookie-warning-banner-view {
+	@extend .global-views-message;
+	@extend .global-views-message-info;
+	
+	div {
+		color: $sc-color-copy;
+		font-size: $tt-top-menu-font-size;
+	}
+}
+
+.cookie-warning-banner-view-close-button {
+	@extend .global-views-message-button;
+	background-color: transparent;
+	color: $sc-color-copy;
+}

@@ -1,0 +1,107 @@
+.facets-faceted-navigation-results{
+	padding: $sc-padding-lv4 $sc-padding-lv3;
+	font-size: $sc-font-size-m;
+
+	@media (min-width: $screen-md-min){
+		display: none;
+	}
+}
+
+.facets-faceted-navigation-title-alt {
+	color: $sc-color-primary;
+}
+
+.facets-faceted-navigation-facet-group {
+	padding: $sc-padding-lv2 $sc-padding-lv3;
+	border-bottom: 1px solid $sc-color-theme-border-light;
+
+	@media (min-width: $screen-md-min) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.facets-faceted-navigation-title {
+	display: none;
+
+	@media (min-width: $screen-md-min) {
+		font-size: $sc-font-size-l;
+		font-weight: $sc-font-weight-semibold;
+		text-align: left;
+		display: block;
+		padding: $sc-padding-lv3;
+		padding-left: 0;
+	}
+}
+
+
+
+.facets-faceted-navigation-facets-clear {
+	@extend .filter-generic;
+
+	width: inherit;
+	font-size: $sc-font-size-xs;
+	border: 1px solid $sc-color-copy;
+	border-radius: $sc-border-radius;
+	padding-right: $sc-padding-lv2;
+	padding-left: $sc-padding-lv2;
+
+	@media (min-width: $screen-md-min) {
+		position: inherit;
+		display: inline-block;
+	}
+
+	@media (max-width: $screen-sm-max) {
+		margin-left: $sc-padding-lv3;
+	}
+
+	&:hover {
+		color: $sc-color-copy;
+	}
+}
+
+.facets-faceted-navigation-facets-clear-icon {
+	@extend .facets-faceted-navigation-facet-option-circle;
+}
+.facets-faceted-navigation-facet-group-expander:hover {
+	text-decoration: none;
+}
+
+.facets-faceted-navigation-facet-group-title {
+	font-weight: $sc-font-weight-normal;
+}
+
+.facets-faceted-navigation-facet-group-expander {
+	display:block;
+	padding: $sc-padding-lv2 0;
+}
+
+.facets-faceted-navigation-facet-group-expander-icon {
+	float: right;
+	color: $sc-color-copy;
+	font-size: 14px;
+	line-height: 27px;
+	margin-top: -3px;
+	@extend .icon-chevron-down;
+	@include transition-transform(300ms ease);
+}
+
+a[class^="facets-faceted-navigation-item"]:not(.collapsed) {
+	i[class^="facets-faceted-navigation-item"] {
+		@include rotate(180deg);
+	}
+}
+
+/*  */
+.facets-faceted-navigation-facet-option {
+	@extend .single-select-option;
+}
+
+.facets-faceted-navigation-facet-option-circle {
+	@extend .single-select-icon-close;
+}
+/* */
+
+.facets-faceted-navigation-content .sc-pusher-header{
+	margin:0;
+}

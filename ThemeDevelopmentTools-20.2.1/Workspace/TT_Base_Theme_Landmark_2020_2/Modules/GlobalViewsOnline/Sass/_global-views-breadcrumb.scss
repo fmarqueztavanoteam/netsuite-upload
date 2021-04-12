@@ -1,0 +1,34 @@
+.global-views-breadcrumb-item-active {
+	@extend .breadcrumb-item-active;
+}
+
+.global-views-breadcrumb-item {
+	@extend .breadcrumb-item;
+}
+
+.global-views-breadcrumb-divider {
+	@extend .breadcrumb-divider;	
+}
+
+.global-views-breadcrumb {
+	@extend .container;
+	@extend .breadcrumb;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+
+.global-views-breadcrumb-divider-icon {
+	@extend .breadcrumb-divider-icon;
+}
+
+// Override: CMS Breadcrumb Columns
+#banner-breadcrumb-bottom {
+	width: 100%;
+	background-color: $sc-color-theme-100;
+	.cms-content {
+		@extend .container;
+	}
+	.columnscct-text-container  {
+		text-align: center !important;
+	}
+}

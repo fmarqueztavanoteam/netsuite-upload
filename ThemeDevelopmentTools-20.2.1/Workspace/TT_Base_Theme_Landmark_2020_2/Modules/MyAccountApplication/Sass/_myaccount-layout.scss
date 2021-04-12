@@ -1,0 +1,91 @@
+.myaccount-layout,
+.myaccount-standalone-layout {
+	@extend %sc-layout;
+}
+
+// .myaccount-layout-container{
+	// Footer module will set a bottom padding with the size of the footer	(on Footer.View.js)
+	// @extend .container;
+// }
+
+.myaccount-layout-header {
+    &.myaccount-layout-header-standalone {
+      box-shadow: none;
+    }
+}
+
+.myaccount-layout-notifications {
+	@extend .container;
+}
+
+.myaccount-layout-row{
+	@extend .container;
+	margin-top: $sc-margin-lv4;
+	margin-bottom: $sc-margin-lv4;
+}
+
+.myaccount-layout-main,
+.myaccount-standalone-layout-main {
+	@extend .col-xs-12;
+	@extend .col-sm-9;
+	padding: 0 !important;
+	@media (max-width: $screen-xs-max) {
+		margin-top: $sc-margin-lv2;
+	}
+	@media (min-width: $screen-sm-min){
+		margin-bottom: 70px;
+	}
+	.page-not-found {
+		overflow: hidden;
+	}
+}
+
+.myaccount-layout-footer {
+	@extend %sc-footer !optional;
+}
+
+.myaccount-layout-title{
+	@extend .container;
+	margin-top: $sc-margin-lv4;
+	margin-bottom: $sc-margin-lv4;
+	display:none;
+
+	@media (min-width: $screen-sm-min){
+		display: block;
+	}
+}
+
+.myaccount-layout-no-javascript-msg {
+	@extend .message-warning;
+	width: 100%;
+}
+
+.myaccount-layout-side-nav{
+	@extend .col-sm-3;
+	display: none;
+	padding-left: 0;
+	padding-right: $sc-padding-lv6;
+
+	@media (min-width: $screen-sm-min){
+		display: block;
+	}
+}
+
+.force-hide-side-nav{
+
+	.myaccount-layout-side-nav{
+		display: none;
+	}
+
+	.myaccount-layout-title{
+		display: none;
+	}
+
+	.myaccount-layout-main,
+	.myaccount-standalone-layout-main{
+		@extend .col-sm-12;
+	}
+}
+
+
+

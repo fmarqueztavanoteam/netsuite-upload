@@ -1,0 +1,21 @@
+.global-views-host-selector{
+	margin-bottom:$sc-margin-lv2;
+	overflow:hidden;
+	@extend .selector;
+}
+
+.global-views-host-selector-addon{
+	@extend .selector-icon;
+	border-top-left-radius: $sc-border-radius;
+	border-bottom-left-radius: $sc-border-radius;
+}
+
+.global-views-host-selector-select{
+	@extend .selector-select;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.global-views-host-selector-globe-icon{
+	@extend .icon-globe;
+}

@@ -1,0 +1,176 @@
+$tt-buttons-animation: none; /* editable({
+	"type": "string",
+	"label": "Animation",
+	"options": [
+		{"value": "none", "text": "none"},
+		{"value": "grow", "text": "grow"},
+		{"value": "overlinefromleft", "text": "overline from left"}
+	]
+}) */
+
+// Primary button variables
+$sc-button-primary-background-color: $sc-color-primary; /* editable({"type": "color", "label": "Background"}) */
+$sc-button-primary-text-color: rgb(255, 255, 255); /* editable({"type": "color", "label": "Text"}) */
+$sc-button-primary-border-color: $sc-button-primary-background-color; /* editable({"type": "color", "label": "Border"}) */
+$sc-button-primary-border-radius: $sc-border-radius; /* editable({"type": "string", "label": "Border radius"}) */
+
+$sc-button-primary-hover-background-color: transparent; /* editable({"type": "color", "label": "Hover background"}) */
+$sc-button-primary-hover-text-color: $sc-color-primary; /* editable({"type": "color", "label": "Hover text"}) */
+$sc-button-primary-hover-border-color: $sc-button-primary-border-color; /* editable({"type": "color", "label": "Hover border"}) */
+
+$sc-button-primary-active-background-color: transparent; /* editable({"type": "color", "label": "Active background"}) */
+$sc-button-primary-active-text-color: $sc-color-primary; /* editable({"type": "color", "label": "Active text"}) */
+$sc-button-primary-active-border-color: $sc-button-primary-border-color; /* editable({"type": "color", "label": "Active border"}) */
+
+$sc-button-primary-text-transform: uppercase; /* editable({
+	"type": "string",
+	"label": "Text transform",
+	"options": [
+		{"value": "uppercase", "text": "uppercase"},
+		{"value": "lowercase", "text": "lowercase"},
+		{"value": "capitalize", "text": "capitalize"},
+		{"value": "none", "text": "none"}
+	]
+}) */
+
+$tt-button-primary-animation: $tt-buttons-animation; /* editable({
+	"type": "string",
+	"label": "Animation",
+	"options": [
+		{"value": "none", "text": "none"},
+		{"value": "grow", "text": "grow"},
+		{"value": "overlinefromleft", "text": "overline from left"}
+	]
+}) */
+
+// Secondary button variables
+$sc-button-secondary-background-color: $sc-color-secondary; /* editable({"type": "color", "label": "Background"}) */
+$sc-button-secondary-text-color: rgb(255, 255, 255); /* editable({"type": "color", "label": "Text"}) */
+$sc-button-secondary-border-color: $sc-button-secondary-background-color; /* editable({"type": "color", "label": "Border"}) */
+$sc-button-secondary-border-radius: $sc-border-radius; /* editable({"type": "string", "label": "Border radius"}) */
+
+$sc-button-secondary-hover-background-color: transparent; /* editable({"type": "color", "label": "Hover background"}) */
+$sc-button-secondary-hover-text-color: $sc-color-secondary; /* editable({"type": "color", "label": "Hover text"}) */
+$sc-button-secondary-hover-border-color: $sc-button-secondary-border-color; /* editable({"type": "color", "label": "Hover border"}) */
+
+$sc-button-secondary-active-background-color: transparent; /* editable({"type": "color", "label": "Active background"}) */
+$sc-button-secondary-active-text-color: $sc-color-secondary; /* editable({"type": "color", "label": "Active text"}) */
+$sc-button-secondary-active-border-color: $sc-button-secondary-border-color; /* editable({"type": "color", "label": "Active border"}) */
+
+$sc-button-secondary-text-transform: uppercase; /* editable({
+	"type": "string",
+	"label": "Text transform",
+	"options": [
+		{"value": "uppercase", "text": "uppercase"},
+		{"value": "lowercase", "text": "lowercase"},
+		{"value": "capitalize", "text": "capitalize"},
+		{"value": "none", "text": "none"}
+	]
+}) */
+
+$tt-button-secondary-animation: $tt-buttons-animation; /* editable({
+	"type": "string",
+	"label": "Animation",
+	"options": [
+		{"value": "none", "text": "none"},
+		{"value": "grow", "text": "grow"},
+		{"value": "overlinefromleft", "text": "overline from left"}
+	]
+}) */
+
+// Tertiary button variables
+$sc-button-tertiary-background-color: transparent; /* editable({"type": "color", "label": "Background"}) */
+$sc-button-tertiary-text-color: $sc-color-secondary; /* editable({"type": "color", "label": "Text"}) */
+$sc-button-tertiary-border-color: $sc-color-secondary; /* editable({"type": "color", "label": "Border"}) */
+$sc-button-tertiary-border-radius: $sc-border-radius; /* editable({"type": "string", "label": "Border radius"}) */
+
+$sc-button-tertiary-hover-background-color: $sc-color-secondary; /* editable({"type": "color", "label": "Hover background"}) */
+$sc-button-tertiary-hover-text-color: rgb(255, 255, 255); /* editable({"type": "color", "label": "Hover text"}) */
+$sc-button-tertiary-hover-border-color: $sc-button-tertiary-border-color; /* editable({"type": "color", "label": "Hover border"}) */
+
+$sc-button-tertiary-active-background-color: $sc-color-secondary; /* editable({"type": "color", "label": "Active background"}) */
+$sc-button-tertiary-active-text-color: rgb(255, 255, 255); /* editable({"type": "color", "label": "Active text"}) */
+$sc-button-tertiary-active-border-color: $sc-button-tertiary-border-color; /* editable({"type": "color", "label": "Active border"}) */
+
+$sc-button-tertiary-text-transform: uppercase; /* editable({
+	"type": "string",
+	"label": "Text transform",
+	"options": [
+		{"value": "uppercase", "text": "uppercase"},
+		{"value": "lowercase", "text": "lowercase"},
+		{"value": "capitalize", "text": "capitalize"},
+		{"value": "none", "text": "none"}
+	]
+}) */
+
+$tt-button-tertiary-animation: $tt-buttons-animation; /* editable({
+	"type": "string",
+	"label": "Animation",
+	"options": [
+		{"value": "none", "text": "none"},
+		{"value": "grow", "text": "grow"},
+		{"value": "overlinefromleft", "text": "overline from left"}
+	]
+}) */
+
+// Quaternary button variables - Tavano Team
+$tt-button-quaternary-background-color: rgb(255, 255, 255); /* editable({"type": "color", "label": "Background"}) */
+$tt-button-quaternary-text-color: rgb(0, 0, 0); /* editable({"type": "color", "label": "Text"}) */
+$tt-button-quaternary-border-color: rgb(255, 255, 255); /* editable({"type": "color", "label": "Border"}) */
+$tt-button-quaternary-border-radius: $sc-border-radius; /* editable({"type": "string", "label": "Border radius"}) */
+
+$tt-button-quaternary-hover-background-color: transparent; /* editable({"type": "color", "label": "Hover background"}) */
+$tt-button-quaternary-hover-text-color: rgb(255, 255, 255); /* editable({"type": "color", "label": "Hover text"}) */
+$tt-button-quaternary-hover-border-color: $tt-button-quaternary-border-color; /* editable({"type": "color", "label": "Hover border"}) */
+
+$tt-button-quaternary-active-background-color: transparent; /* editable({"type": "color", "label": "Active background"}) */
+$tt-button-quaternary-active-text-color: rgb(255, 255, 255); /* editable({"type": "color", "label": "Active text"}) */
+$tt-button-quaternary-active-border-color: $tt-button-quaternary-border-color; /* editable({"type": "color", "label": "Active border"}) */
+
+$tt-button-quaternary-text-transform: uppercase; /* editable({
+	"type": "string",
+	"label": "Text transform",
+	"options": [
+		{"value": "uppercase", "text": "uppercase"},
+		{"value": "lowercase", "text": "lowercase"},
+		{"value": "capitalize", "text": "capitalize"},
+		{"value": "none", "text": "none"}
+	]
+}) */
+
+$tt-button-quaternary-animation: $tt-buttons-animation; /* editable({
+	"type": "string",
+	"label": "Animation",
+	"options": [
+		{"value": "none", "text": "none"},
+		{"value": "grow", "text": "grow"},
+		{"value": "overlinefromleft", "text": "overline from left"}
+	]
+}) */
+
+// Large button
+$sc-button-large-padding-v: $sc-padding-lv4; /* editable({"type": "string", "label": "Vertical padding"}) */
+$sc-button-large-padding-h: $sc-padding-lv7; /* editable({"type": "string", "label": "Horizontal padding"}) */
+$sc-button-large-font-size: $sc-font-size-s; /* editable({"type": "string", "label": "Font size"}) */
+$sc-button-large-line-height: 1; /* editable({"type": "string", "label": "Line height"}) */
+$sc-button-large-letter-spacing: 1px; /* editable({"type": "string", "label": "Letter spacing"}) */
+$sc-button-large-mobile-width: 100%; /* editable({"type": "string", "label": "Mobile width"}) */
+$sc-button-large-desktop-width: auto; /* editable({"type": "string", "label": "Desktop width"}) */
+
+// Medium button
+$sc-button-medium-padding-v: $sc-padding-lv2; /* editable({"type": "string", "label": "Vertical padding"}) */
+$sc-button-medium-padding-h: $sc-padding-lv4; /* editable({"type": "string", "label": "Horizontal padding"}) */
+$sc-button-medium-font-size: $sc-font-size-xs; /* editable({"type": "string", "label": "Font size"}) */
+$sc-button-medium-line-height: 1; /* editable({"type": "string", "label": "Line height"}) */
+$sc-button-medium-letter-spacing: 0.5px; /* editable({"type": "string", "label": "Letter spacing"}) */
+$sc-button-medium-mobile-width: 100%; /* editable({"type": "string", "label": "Mobile width"}) */
+$sc-button-medium-desktop-width: auto; /* editable({"type": "string", "label": "Desktop width"}) */
+
+// Small button
+$sc-button-small-padding-v: $sc-padding-lv2; /* editable({"type": "string", "label": "Vertical padding"}) */
+$sc-button-small-padding-h: $sc-padding-lv3; /* editable({"type": "string", "label": "Horizontal padding"}) */
+$sc-button-small-font-size: $sc-font-size-xs; /* editable({"type": "string", "label": "Font size"}) */
+$sc-button-small-line-height: 1; /* editable({"type": "string", "label": "Line height"}) */
+$sc-button-small-letter-spacing: normal; /* editable({"type": "string", "label": "Letter spacing"}) */
+$sc-button-small-mobile-width: auto; /* editable({"type": "string", "label": "Mobile width"}) */
+$sc-button-small-desktop-width: auto; /* editable({"type": "string", "label": "Desktop width"}) */

@@ -1,0 +1,63 @@
+// Header variables
+$sc-header-background-color: rgb(255, 255, 255); /* editable({"type": "color", "label": "Background"}) */
+$sc-header-shadow-color: transparent;
+$sc-header-border-color: rgb(231, 231, 231); /* editable({"type": "color", "label": "Border"}) */
+$sc-header-border-width: 0;
+
+// Top Message
+$tt-header-top-message-background-color: black; /* editable({"type": "color", "label": "Background"}) */
+$tt-header-top-message-color: white; /* editable({"type": "color", "label": "Text"}) */
+
+// Header links variables
+$sc-header-link-text-color: $sc-color-secondary; /* editable({"type": "color", "label": "Link"}) */
+$sc-header-link-hover-text-color: $sc-color-link-hover; /* editable({"type": "color", "label": "Link hover"}) */
+$sc-header-link-active-text-color: $sc-color-copy-dark; /* editable({"type": "color", "label": "Link active"}) */
+$sc-header-link-text-transform: none;
+
+// Header cart link variables
+$tt-header-cart-link-color: transparent; /* editable({"type": "color", "label": "Cart background"}) */
+$sc-header-cart-link-text-color: rgb(255, 255, 255); /* editable({"type": "color", "label": "Cart link"}) */
+$tt-header-cart-link-color-hover: transparent; /* editable({"type": "color", "label": "Cart background hover"}) */
+$sc-header-cart-link-text-color-hover: rgb(255, 255, 255); /* editable({"type": "color", "label": "Cart link hover"}) */
+$tt-header-cart-link-color-active: transparent; /* editable({"type": "color", "label": "Cart background active"}) */
+$sc-header-cart-link-text-color-active: rgb(255, 255, 255); /* editable({"type": "color", "label": "Cart link active"}) */
+$tt-mobile-header-cart-link-color: transparent; /* editable({"type": "color", "label": "Mobile Cart background"}) */
+$tt-mobile-header-cart-link-text-color: rgb(255, 255, 255); /* editable({"type": "color", "label": "Mobile Cart link"}) */
+
+$tt-header-cart-left-space: 0px; /* editable({"type": "string", "label": "Cart left space"}) */
+$tt-header-cart-right-space: 0px; /* editable({"type": "string", "label": "Cart right space"}) */
+$tt-mobile-header-cart-left-space: 0px; /* editable({"type": "string", "label": "Mobile Cart left space"}) */
+$tt-mobile-header-cart-right-space: 0px; /* editable({"type": "string", "label": "Mobile Cart right space"}) */
+
+// Mobile header icons
+$sc-mobile-header-icon-color: $sc-color-secondary;
+$sc-mobile-header-icon-active-color: $sc-color-secondary;
+$sc-mobile-header-cart-icon-color: $sc-color-primary;
+$sc-mobile-header-cart-icon-active-color: $sc-color-primary;
+
+$sc-mobile-header-border-color: $sc-neutral-shade-0;
+$sc-mobile-header-border-width: 0;
+
+$tt-mobile-sidebar-icon-size: 18px;
+
+// Site Search
+$tt-site-search-width: 400px;
+$tt-site-search-height: 50px - 2; // Real height: 50px (2px of borders)
+
+$tt-site-search-margin-top: 2px;
+
+$tt-site-search-input-icon-font-size: 15px;
+$tt-site-search-button-submit-border-radius: $sc-border-radius - 1;
+
+$tt-search-background-color: rgb(243, 243, 243); /* editable({"type": "color", "label": "Background"}) */
+$tt-search-border-color: rgb(243, 243, 243); /* editable({"type": "color", "label": "Border"}) */
+$tt-search-input-color: rgb(31, 31, 31); /* editable({"type": "color", "label": "Color"}) */
+$tt-search-input-placeholder-color: rgb(121, 121, 121); /* editable({"type": "color", "label": "Placeholder"}) */
+$tt-search-input-reset-color: rgb(187, 187, 187); /* editable({"type": "color", "label": "Reset icon"}) */
+$tt-search-submit-color: rgb(168, 129, 93); /* editable({"type": "color", "label": "Submit"}) */
+$tt-search-submit-background-color: rgb(243, 243, 243); /* editable({"type": "color", "label": "Submit background"}) */
+
+// Logo
+$tt-header-logo-height: 55px;
+$tt-simplified-header-logo-height: 30px;
+$tt-header-logo-max-width: 250px;

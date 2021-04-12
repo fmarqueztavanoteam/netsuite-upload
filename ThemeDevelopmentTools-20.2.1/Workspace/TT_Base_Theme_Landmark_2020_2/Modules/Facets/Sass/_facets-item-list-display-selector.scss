@@ -1,0 +1,37 @@
+.facets-item-list-display-selector{
+	@extend .icon-button;
+	@extend .icon-button-controls;
+	width: 30px;
+	i {
+		width: auto;
+		font-size: 22px;
+		
+		@media (max-width: $screen-xs-max){
+			line-height: 68px;
+		}
+		@media (max-width: $screen-sm-max) and (min-width: $screen-sm-min){
+			line-height: 56px;
+		}
+		@media (min-width: $screen-md-min){
+			line-height: 51px;
+		}
+	}
+}
+
+//hide active on mobile
+.facets-item-list-display-selector.active{
+	display: inline-block;
+	
+	@media (max-width: 777px){
+		display:none;
+	}
+}
+
+//dispaly the grid icon
+.facets-item-list-display-selector-grid{
+	display: inline-block;
+
+	@media (max-width: 777px){
+		display:none;
+	}
+}

@@ -1,0 +1,40 @@
+// Footer variables
+$sc-footer-background-color: rgb(255, 255, 255); /* editable({"type": "color", "label": "Background"}) */
+$sc-footer-border-color: rgb(228, 228, 228); /* editable({"type": "color", "label": "Border"}) */
+$sc-footer-text-color: rgb(0, 0, 0); /* editable({"type": "color", "label": "Text"}) */
+$tt-footer-text-font-size: $sc-font-size-s; /* editable({"type": "string", "label": "Text font size"}) */
+
+// Link variables
+$sc-footer-link-color: rgb(31, 31, 31); /* editable({"type": "color", "label": "Link"}) */
+$sc-footer-link-color-hover: rgb(0, 0, 0); /* editable({"type": "color", "label": "Link hover"}) */
+$sc-footer-link-color-active: rgb(0, 0, 0); /* editable({"type": "color", "label": "Link active"}) */
+$tt-footer-link-font-size: $sc-font-size-s; /* editable({"type": "string", "label": "Link font size"}) */
+
+// Headings variables
+$sc-footer-headings-color: rgb(0, 0, 0); /* editable({"type": "color", "label": "Headings"}) */
+$tt-footer-headings-font-size: $sc-font-size-s; /* editable({"type": "string", "label": "Headings font size"}) */
+
+// Input fields variables
+$sc-footer-fields-background-color: rgb(243, 243, 243); /* editable({"type": "color", "label": "Field background"}) */
+$sc-footer-fields-border-color: rgb(243, 243, 243); /* editable({"type": "color", "label": "Field border"}) */
+$sc-footer-fields-text-color: rgb(31, 31, 31); /* editable({"type": "color", "label": "Field text"}) */
+$tt-footer-fields-text-placeholder-color: rgb(121, 121, 121); /* editable({"type": "color", "label": "Field placeholder"}) */
+
+// Buttons variables
+$sc-footer-buttons-background-color: transparent; /* editable({"type": "color", "label": "Button background"}) */
+$sc-footer-buttons-border-color: $sc-color-primary; /* editable({"type": "color", "label": "Button border"}) */
+$sc-footer-buttons-text-color: $sc-color-primary; /* editable({"type": "color", "label": "Button text"}) */
+$tt-footer-buttons-text-hover-color: rgb(255, 255, 255); /* editable({"type": "color", "label": "Button hover text"}) */
+
+// News Letter variables
+$tt-footer-newsletter-height: 42px;
+
+// Copyright variables
+$tt-footer-copyright-background-color: rgb(35, 35, 35); /* editable({"type": "color", "label": "Background"}) */
+$tt-footer-copyright-border-color: rgb(35, 35, 35); /* editable({"type": "color", "label": "Border"}) */
+$sc-footer-copyright-text-color: rgb(255, 255, 255); /* editable({"type": "color", "label": "Text"}) */
+
+// Back To Top
+$tt-footer-backtotop-background-color: rgb(35, 35, 35); /* editable({"type": "color", "label": "Background"}) */
+$tt-footer-backtotop-border-color: rgb(78, 78, 78); /* editable({"type": "color", "label": "Border"}) */
+$sc-footer-backtotop-text-color: rgb(255, 255, 255); /* editable({"type": "color", "label": "Text"}) */

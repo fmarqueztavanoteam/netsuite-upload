@@ -1,0 +1,122 @@
+// .header-profile-login-link{}
+
+// .header-profile-welcome-link{}
+
+.header-profile-register-link-separator{
+	color: $sc-top-menu-link-text-color;
+}
+
+.header-profile-welcome-link-name{
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+
+	@media (min-width: $screen-md-min){
+		display: inline;
+	}
+}
+
+.header-profile-welcome-user-icon{
+	@extend .fa;
+	@extend %fa-user;
+
+	float:left;
+	font-size: $sc-font-size-l;
+	padding: $sc-padding-lv1 0;
+	margin-right: $sc-margin-lv3;
+
+	@media (min-width: $screen-md-min){
+		display: none;
+	}
+}
+
+.header-profile-welcome-carret-icon{
+	@extend .fa;
+	@extend %fa-angle-down;
+	display:none;
+	margin-left: $sc-margin-lv1;
+
+	@media (min-width: $screen-md-min){
+		display: inline;
+	}
+}
+
+//////////////////////////////////////////////////////////
+//login register
+
+// .header-profile-menu-login{}
+
+// .header-profile-menu-login-container{}
+
+// .header-profile-menu-login li{}
+
+.header-profile-login-icon{
+	@extend .fa;
+	@extend %fa-user;
+	margin-right: $sc-margin-lv2;
+}
+
+//////////////////////////////////////////////////////////
+//my account menu
+.header-profile-menu-myaccount-container {
+	display: none;
+	position: absolute;
+	left: 0;
+	margin-top: 1px;
+	width: 100%;
+	min-height: 150px;
+	z-index: 1002;
+
+	> li {
+		@extend .container;
+		display: block;
+		background-color: $sc-main-navigation-submenu-background-color;
+		padding: $sc-padding-lv3;
+		border: 1px solid $sc-color-theme-border-light;
+		@include box-shadow(0 6px 12px transparentize($sc-neutral-shade-500, 1-0.175));
+	}
+}
+.open .header-profile-menu-myaccount-container {
+	display: block;
+}
+.header-profile-welcome-link:focus {
+	color: $sc-top-menu-link-text-color;
+}
+.header-profile-welcome-link:active,
+.open .header-profile-welcome-link {
+	color: $sc-top-menu-link-active-text-color;
+}
+
+// .open .header-profile-welcome-link:before {
+// 	position: absolute;
+// 	top: 50px;
+// 	left: 50%;
+// 	margin-left: -7.5px;
+// 	border-right: 7px solid transparent;
+// 	border-bottom: 7px solid $sc-neutral-shade-0;
+// 	border-left: 7px solid transparent;
+// 	border-bottom-color: transparentize($sc-neutral-shade-500, 1-0.2);
+// 	content: '';
+// 	display: none;
+// 	@media (min-width: $screen-lg-min) {
+// 		display: block;
+// 	}
+// }
+// .open .header-profile-welcome-link:after {
+// 	position: absolute;
+// 	top: 51px;
+// 	left: 50%;
+// 	margin-left: -6.5px;
+// 	border-right: 6px solid transparent;
+// 	border-bottom: 6px solid $sc-neutral-shade-0;
+// 	border-left: 6px solid transparent;
+// 	content: '';
+// 	z-index: 9999;
+// 	display: none;
+// 	@media (min-width: $screen-lg-min) {
+// 		display: block;
+// 	}
+// }
+
+

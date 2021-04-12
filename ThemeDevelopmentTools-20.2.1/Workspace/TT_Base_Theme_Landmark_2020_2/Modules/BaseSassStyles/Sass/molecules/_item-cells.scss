@@ -1,0 +1,123 @@
+$tt-item-cell-image-height: 100%; /* editable({"type": "string", "label": "Image Height (100% is equivalent to a 1:1 aspect ratio)"}) */
+
+.item-cell {
+	margin-bottom: $sc-margin-lv3;
+}
+
+.item-cell-image-wrapper {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: $sc-padding-lv2;
+	border: 1px solid $sc-color-theme-border-light;
+
+	@media (max-width: $screen-xs-max) {
+		padding: $sc-padding-lv1;
+	}
+}
+
+.item-cell-link-image {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding-top: $tt-item-cell-image-height;
+}
+
+.item-cell-image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	max-height: 100%;
+	max-width: 100%;
+	@include translate(-50%, -50%);
+}
+
+.item-cell-title {
+	@extend .xsmall-title-navigable;
+	padding: $sc-padding-lv2 0;
+	display: block;
+	text-align: left;
+
+	a {
+		color: $sc-color-copy;
+	}
+}
+
+.item-cell-sku {
+	@extend .sc-sku-value;
+	font-size: $sc-font-size-xs;
+	padding-bottom: $sc-padding-lv1;
+}
+.item-cell-sku-title {
+	@extend .sc-sku-label;
+	font-size: $sc-font-size-xs;
+}
+// .item-cell-sku-main {}
+
+.item-cell-price {
+	@extend .small-price;
+	text-align: left;
+}
+
+.item-cell-rate {
+	text-align: left;
+}
+
+.item-cell-rate-filled {
+	@extend .icon-star-filled;
+}
+
+.item-cell-rate-empty {
+	@extend .icon-star;
+}
+
+.item-cell-store-description {
+	font-size: $sc-font-size-s;
+	margin-bottom: $sc-margin-lv2;
+	p, span, a {
+		font-size: $sc-font-size-s;
+	}
+}
+
+.item-cell-minimum-quantity {
+	margin-bottom: $sc-margin-lv2;
+	span {
+		font-size: $sc-font-size-xxs;
+		color: $sc-color-copy-light;
+	}
+}
+
+///////////////////////////////////////////////////////////////
+//Quick view
+
+.item-cell-quick-view-wrapper {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 50%;
+	@include translate(0, -50%);
+}
+
+.item-cell:hover .item-cell-quick-view-wrapper {
+	@media (min-width: $screen-md-min) {
+		display: block;
+	}
+}
+
+.item-cell-quick-view-link {
+	@extend .button-secondary;
+	@extend .button-small;
+
+	&:active, &:focus, &:hover {
+		background: $sc-button-secondary-background-color;
+		color: $sc-button-secondary-text-color;
+		border: 1px solid $sc-button-secondary-border-color;
+	}
+}
+
+.icon-cell-quick-view-icon {
+	@extend .fa;
+	@extend %fa-search;
+}

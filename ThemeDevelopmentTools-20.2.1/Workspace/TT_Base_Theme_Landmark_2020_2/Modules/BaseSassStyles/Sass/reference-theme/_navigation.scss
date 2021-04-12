@@ -1,0 +1,88 @@
+// Main navigation variables
+$sc-main-navigation-background-color: $sc-header-background-color; /* editable({"type": "color", "label": "Background"}) */
+
+$tt-main-navigation-link-font-size: $sc-font-size-m; /* editable({"type": "string", "label": "Font size"}) */
+
+$sc-main-navigation-link-background-color: $sc-header-background-color; /* editable({"type": "color", "label": "Link background"}) */
+$sc-main-navigation-link-color: rgb(107, 107, 107); /* editable({"type": "color", "label": "Link"}) */
+$sc-main-navigation-link-text-transform: uppercase;
+$sc-main-navigation-link-letter-spacing: 0;
+$sc-main-navigation-link-border-color: initial;
+$sc-main-navigation-link-border-top-width: 0;
+$sc-main-navigation-link-border-bottom-width: 0;
+$sc-main-navigation-link-margin-right: 0;
+
+$sc-main-navigation-link-hover-background-color: rgb(0, 0, 0); /* editable({"type": "color", "label": "Link background hover"}) */
+$sc-main-navigation-link-hover-color: rgb(255, 255, 255); /* editable({"type": "color", "label": "Link hover"}) */
+$sc-main-navigation-link-hover-border-color: initial;
+$sc-main-navigation-link-hover-border-top-width: 0;
+$sc-main-navigation-link-hover-border-bottom-width: 0;
+
+$sc-main-navigation-link-active-background-color: rgb(0, 0, 0); /* editable({"type": "color", "label": "Link background active"}) */
+$sc-main-navigation-link-active-color: rgb(255, 255, 255); /* editable({"type": "color", "label": "Link active"}) */
+$sc-main-navigation-link-active-border-color: initial;
+$sc-main-navigation-link-active-border-top-width: 0;
+$sc-main-navigation-link-active-border-bottom-width: 0;
+
+$tt-main-navigation-button-background-color: transparent; /* editable({"type": "color", "label": "Background"}) */
+$tt-main-navigation-button-text-color: $sc-color-primary; /* editable({"type": "color", "label": "Text"}) */
+$tt-main-navigation-button-border-color: $sc-color-primary; /* editable({"type": "color", "label": "Border"}) */
+$tt-main-navigation-button-hover-background-color: $sc-color-primary; /* editable({"type": "color", "label": "Hover background"}) */
+$tt-main-navigation-button-hover-text-color: rgb(255, 255, 255); /* editable({"type": "color", "label": "Hover text"}) */
+$tt-main-navigation-button-hover-border-color: $sc-color-primary; /* editable({"type": "color", "label": "Hover border"}) */
+
+$tt-main-navigation-submenu-border-width: 5px;
+$sc-main-navigation-submenu-background-color: rgb(255, 255, 255); /* editable({"type": "color", "label": "Background"}) */
+$sc-main-navigation-submenu-heading-color: rgb(0, 0, 0); /* editable({"type": "color", "label": "Heading"}) */
+$sc-main-navigation-submenu-heading-text-transform: uppercase;
+$sc-main-navigation-submenu-heading-text-decoration: none;
+$sc-main-navigation-submenu-heading-border-color: $sc-color-theme-border-light; /* editable({"type": "color", "label": "Heading border"}) */
+
+$sc-main-navigation-submenu-link-color: rgb(51, 51, 51); /* editable({"type": "color", "label": "Link"}) */
+$sc-main-navigation-submenu-link-hover-color: rgb(27, 27, 27); /* editable({"type": "color", "label": "Link hover"}) */
+$sc-main-navigation-submenu-link-active-color: rgb(27, 27, 27); /* editable({"type": "color", "label": "Link active"}) */
+
+// Mobile navigation variables
+$sc-mobile-navigation-hamburger-icon-color: rgb(0, 0, 0); /* editable({"type": "color", "label": "Hamburger"}) */
+$sc-mobile-navigation-sidebar-overlay-color: $sc-neutral-shade-500;
+$sc-mobile-navigation-background-color: rgb(255, 255, 255); /* editable({"type": "color", "label": "Background"}) */
+
+$sc-mobile-navigation-link-background-color: $sc-mobile-navigation-background-color; /* editable({"type": "color", "label": "Link background"}) */
+$sc-mobile-navigation-link-color: rgb(0, 0, 0); /* editable({"type": "color", "label": "Link"}) */
+$sc-mobile-navigation-link-hover-color: $sc-mobile-navigation-link-color;
+$sc-mobile-navigation-link-active-color: rgb(0, 0, 0); /* editable({"type": "color", "label": "Link active"}) */
+$tt-mobile-navigation-link-background-active-color: rgb(236, 236, 236); /* editable({"type": "color", "label": "Link background active"}) */
+
+$sc-mobile-navigation-border-width: 1px;
+$sc-mobile-navigation-border-color: $sc-color-theme-border-light; /* editable({"type": "color", "label": "Link border"}) */
+
+// Top Menu variables
+$sc-top-menu-background-color: rgb(35, 35, 35); /* editable({"type": "color", "label": "Background"}) */
+$sc-top-menu-border-color: rgb(35, 35, 35); /* editable({"type": "color", "label": "Border"}) */
+$tt-top-menu-border-width: 0px; /* editable({"type": "string", "label": "Border width"}) */
+$tt-top-menu-font-size: $sc-font-size-xxs;
+
+// Top Menu links variables
+$sc-top-menu-link-background-color: $sc-top-menu-background-color;
+$sc-top-menu-link-text-color: rgb(240, 240, 240); /* editable({"type": "color", "label": "Link"}) */
+$sc-top-menu-link-text-transform: uppercase;
+$sc-top-menu-link-border-color: initial;
+$sc-top-menu-link-border-top-width: 0;
+$sc-top-menu-link-border-bottom-width: 0;
+
+$sc-top-menu-link-hover-background-color: $sc-top-menu-background-color;
+$sc-top-menu-link-hover-text-color: rgb(255, 255, 255); /* editable({"type": "color", "label": "Link hover"}) */
+$sc-top-menu-link-hover-border-color: initial;
+$sc-top-menu-link-hover-border-top-width: 0;
+$sc-top-menu-link-hover-border-bottom-width: 0;
+
+$sc-top-menu-link-active-background-color: $sc-top-menu-background-color;
+$sc-top-menu-link-active-text-color: rgb(255, 255, 255); /* editable({"type": "color", "label": "Link active"}) */
+$sc-top-menu-link-active-border-color: initial;
+$sc-top-menu-link-active-border-top-width: 0;
+$sc-top-menu-link-active-border-bottom-width: 0;
+
+// Top Menu link spacings
+$sc-top-menu-link-line-height: 1.6;
+$sc-top-menu-link-letter-spacing: 0;
+$sc-top-menu-link-spacing: 0;

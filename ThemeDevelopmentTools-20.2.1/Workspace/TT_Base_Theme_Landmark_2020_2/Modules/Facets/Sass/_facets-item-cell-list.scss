@@ -1,0 +1,169 @@
+.facets-item-cell-list {
+	@extend .row;
+	@extend .item-cell;
+	position: relative;
+
+	.cart-add-to-cart-button-container {
+		width: auto;
+		padding: 0px;
+		margin-bottom: $sc-margin-lv2;
+	}
+	.cart-add-to-cart-button-button {
+		@extend .button-small;
+		margin-top: 0;
+		float: left;
+	}
+
+	.cart-quickaddtocart-price {
+		.product-views-price {
+			margin-bottom: $sc-margin-lv2;
+		}
+	}
+
+	.product-line-stock {
+		clear:both;
+	}
+
+	.product-line-stock-description-msg-description {
+		margin-top: 0;
+	}
+}
+
+.facets-item-cell-list-quick-view-wrapper {
+	@extend .item-cell-quick-view-wrapper;
+}
+
+.facets-item-cell-list-quick-view-link {
+	@extend .item-cell-quick-view-link;
+}
+
+.facets-item-cell-list-left {
+	@extend .col-xs-3;
+	@media (max-width: $screen-xs-max) {
+		width: 125px;
+		padding-right: 0;
+	}
+}
+
+.facets-item-cell-list-middle {
+	@extend .col-xs-9;
+	@extend .col-md-6;
+	position: static;
+	@media (max-width: $screen-xs-max){
+		width: calc(100% - 125px);
+	}
+}
+
+.facets-item-cell-list-right {
+	@extend .col-xs-9;
+	@extend .col-md-3;
+	float: right;
+	@media (max-width: $screen-xs-max){
+		width: calc(100% - 125px);
+	}
+	.item-views-price {
+		text-align:left;
+	}
+}
+
+.facets-item-cell-list-image-wrapper {
+	@extend .item-cell-image-wrapper;
+}
+
+.facets-item-cell-list-anchor,
+.facets-item-cell-list-image-container {
+	@extend .item-cell-link-image;
+}
+
+.facets-item-cell-list-stock-message {
+	text-align:left;
+}
+
+.facets-item-cell-list-details {
+	text-align:center;
+}
+
+.facets-item-cell-list-image {
+	@extend .item-cell-image;
+}
+
+.facets-item-cell-list-title {
+	@extend .item-cell-title;
+	padding-top: 0;
+	text-align:left;
+}
+
+.facets-item-cell-list-sku {
+	@extend .item-cell-sku;
+}
+
+.facets-item-cell-list-sku-title {
+	@extend .item-cell-sku-title;
+}
+
+.facets-item-cell-list-mpn { // Tavano Team - Facets Items Info Extension
+	.facets-item-cell-mpn {
+		@extend .item-cell-sku;
+	}
+	.facets-item-cell-mpn-title {
+		@extend .item-cell-sku-title;
+	}
+}
+
+.facets-item-cell-list-price {
+	@extend .small-price;
+}
+
+.facets-item-cell-list-rating {
+	text-align:center;
+	display: inline-block;
+}
+
+.facets-item-cell-list-store-description { // Tavano Team - Facets Items Info Extension
+	.facets-item-cell-store-description {
+		@extend .item-cell-store-description;
+		ul, li {
+			list-style: inside;
+			list-style-type: disc;
+		}
+	}
+}
+
+.facets-item-cell-list-minimum-quantity { // Tavano Team - Facets Items Info Extension
+	.facets-item-cell-minimum-quantity {
+		@extend .item-cell-minimum-quantity;
+	}
+}
+
+// Tavano Team Overrides - NS Item Badges Extension
+.facets-item-cell-list {
+	.itembadges-container {
+		padding: $sc-padding-lv3;
+	}
+	.itembadges-container-top-left {
+		@media (max-width: $screen-xs-max){
+			padding-top: 0;
+		}
+	}
+	.itembadges-container-top-right {
+		width: 25%;
+		left: 0;
+		right: unset !important;
+		@media (max-width: $screen-xs-max){
+			padding: 0;
+		}
+	}
+	.itembadges-container-top-left,
+	.itembadges-container-top-right {
+		@media (max-width: $screen-xs-max){
+			top: 110px !important;
+			width: 125px;
+		}
+	}
+	.itembadges-badge-container-individual {
+		@media (max-width: $screen-xs-max) {
+			margin-left: 0 !important;
+			margin-right: 0 !important;
+		}
+	}
+}

@@ -1,0 +1,135 @@
+.cart-lines-name{
+	margin-bottom:$sc-margin-lv2;
+}
+
+.cart-lines-name-link{
+	@extend .medium-title-navigable;
+}
+
+.cart-lines-name-viewonly{
+	@extend .medium-title-viewonly;
+}
+
+.cart-lines-thumbnail{
+	img{
+		width:$img-larger;
+	}
+}
+
+.cart-lines-price{
+	margin-bottom:$sc-margin-lv2;
+}
+
+.cart-lines-price .transaction-line-views-price-lead{
+	@extend .middle-price;
+	color: $sc-color-copy;
+}
+
+.cart-lines-options{
+	.cart-option{
+		font-size:$sc-font-size-m;
+	}
+}
+
+.cart-lines-row {
+	@extend .row;
+	margin: 0;
+	padding-top: $sc-padding-lv4;
+	padding-bottom: $sc-padding-lv4;
+	border-top: 1px solid $sc-color-theme-border-light;
+
+	@media (max-width: $screen-xs-max) {
+		text-align: center;
+	}
+}
+
+.cart-lines-table-first {
+	@extend .col-xs-12;
+	@extend .col-sm-4;
+	@extend .col-lg-3;
+	
+	@media (min-width: $screen-sm-min) {
+		padding-left: 0;
+	}
+	@media (max-width: $screen-xs-max) {
+		margin-bottom: $sc-margin-lv4;
+		padding: 0;
+	}
+}
+
+.cart-lines-table-middle {
+	@extend .col-xs-12;
+	@extend .col-sm-8;
+	@extend .col-lg-6;
+
+	@media (min-width: $screen-sm-min) {
+		padding-right: 0;
+	}
+	@media (max-width: $screen-xs-max) {
+		padding: 0;
+	}
+}
+
+.cart-lines-table-last {
+	@extend .col-xs-12;
+	@extend .col-sm-8;
+	@extend .col-lg-3;
+	text-align: right;
+
+	@media (max-width: $screen-md-max) {
+		float: right;
+		text-align: left;
+	}
+	@media (min-width: $screen-sm-min) {
+		padding-right: 0;
+	}
+	@media (max-width: $screen-xs-max) {
+		padding: 0;
+		text-align: center;
+	}
+	
+	.product-line-stock > div,
+	.product-line-stock > p {
+		text-align: left;
+	}
+}
+
+.cart-lines-table-bottom {
+	@extend .col-xs-12;
+	@extend .col-sm-8;
+	@extend .col-lg-9;
+	float: right;
+
+	@media (min-width: $screen-sm-min) {
+		padding-right: 0;
+	}
+	@media (max-width: $screen-xs-max) {
+		padding: 0;
+	}
+}
+
+.cart-lines-alert-placeholder {
+	margin:$sc-margin-lv2 0;
+}
+
+.cart-lines-shipping-method {
+	margin-top: $sc-margin-lv3;
+	&:empty() {
+		margin-top: 0;
+	}
+}
+
+.cart-lines-item-actions-desktop {
+	@media (max-width: $screen-md-max) {
+		display: none;
+	}
+}
+
+.cart-lines-item-actions-mobile {
+	@media (min-width: $screen-lg-min) {
+		display: none;
+	}
+}
+
+
+

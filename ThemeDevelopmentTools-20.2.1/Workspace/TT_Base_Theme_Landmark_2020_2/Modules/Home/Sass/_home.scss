@@ -1,0 +1,553 @@
+
+// .home {}
+
+.home-section-container {
+    @extend .container;
+}
+
+// Titles
+h3.tt-top-categories-four-columns-title, // Top Categories
+.columns-h1-section h1, // H1 Section
+.merchandising-zone-container h3, // Smart Merch
+.logolistcct-layout h3 { // Logo List
+  @extend %tt-home-title;
+}
+
+// Tavano Team - Hero Banner
+$tt-hero-titles-font-size-desktop: 50px;
+$tt-hero-titles-font-size-mobile: 30px;
+.tt-hero-banner {
+    display: inline-block;
+    margin-bottom: -6px;
+    width: 100%;
+    height: 450px;
+    @media (max-width: $screen-sm-max) {
+        height: auto;
+    }
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.tt-hero-banner-desktop {
+    display: none;
+    @media (min-width: $screen-md-min) {
+        display: block;
+    }
+}
+.tt-hero-banner-mobile {
+    display: none;
+    @media (max-width: $screen-sm-max) {
+        display: block;
+    }
+}
+.tt-hero-banner-left-section {
+    position: relative;
+    width: 65%;
+    height: 100%;
+    float: left;
+    @media (max-width: $screen-sm-max) {
+        width: 100%;
+    }
+}
+.tt-hero-banner-right-section {
+    width: 35%;
+    height: 100%;
+    padding: 0px;
+    float: left;
+    @media (max-width: $screen-sm-max) {
+        width: 100%;
+    }
+}
+.tt-hero-banner-right-banner {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    display: block;
+    @media (max-width: $screen-sm-max) and (min-width: $screen-sm-min) {
+        width: 50%;
+        float: left;
+    }
+    img {
+        display: block;
+    }
+}
+.tt-hero-banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include translate(-50%, -50%);
+    @include banner-text-shadow;
+    text-align: center;
+    width: 100%;
+    h2, p, a {
+        margin-bottom: $sc-margin-lv2;
+        color: rgb(255, 255, 255);
+    }
+    h2 {
+        color: rgb(255, 255, 255);
+        @include banner-text-shadow;
+        font-size: $tt-hero-titles-font-size-desktop;
+        line-height: $tt-hero-titles-font-size-desktop;
+        @media (max-width: $screen-sm-max) {
+            font-size: $tt-hero-titles-font-size-mobile;
+            line-height: $tt-hero-titles-font-size-mobile;
+        }
+    }
+    p {
+        font-size: $sc-font-size-xxl;
+        line-height: $sc-font-size-xxl;
+        @media (max-width: $screen-md-max) {
+                font-size: $sc-font-size-l;
+                line-height: $sc-font-size-l;
+        }
+    }
+}
+
+// Tavano Team - Quick Finder
+$tt-quick-finder-height: 40px;
+.tt-quick-finder {
+    width: 100%;
+    background: $sc-neutral-shade-700;
+    .tt-quick-finder-container {
+        @extend .container;
+        padding-top: $sc-padding-lv8;
+        padding-bottom: $sc-padding-lv8;
+    }
+}
+.tt-quick-finder-title {
+    @extend .col-xs-12;
+    @extend .col-sm-12;
+    @extend .col-md-3;
+    @extend .col-lg-3;
+    display: inline-block;
+    height: $tt-quick-finder-height;
+    line-height: $tt-quick-finder-height;
+    color: $sc-neutral-shade-0;
+    font-size: $sc-font-size-l;
+    padding-right: $sc-padding-lv1;
+    text-align: right;
+    @media (max-width: $screen-sm-max) {
+        margin-bottom: $sc-margin-lv2;
+        text-align: center;
+    }
+}
+.tt-quick-finder-options {
+    @extend .col-xs-12;
+    @extend .col-sm-12;
+    @extend .col-md-6;
+    @extend .col-lg-6;
+    text-align: center;
+    select {
+        height: $tt-quick-finder-height;
+        margin: 0;
+        margin-right: $sc-padding-lv1;
+        padding: 0 $sc-padding-lv2;
+        background-position: 100% 100%;
+        width: calc(33% - 10px);
+        display: inline-block;
+    }
+    @media (max-width: $screen-sm-max) {
+        select {
+            width: 100%;
+            text-align: center;
+            margin: $sc-margin-lv1 0px;
+        }
+    }
+}
+.tt-quick-finder-button {
+    @extend .col-xs-12;
+    @extend .col-sm-12;
+    @extend .col-md-3;
+    @extend .col-lg-3;
+    text-align: left;
+    padding-left: 0;
+    button {
+        height: $tt-quick-finder-height;
+        width: auto;
+        @extend .button-small;
+        @extend .button-primary;
+    }
+    @media (max-width: $screen-sm-max) {
+        padding: 0 $sc-padding-lv2;
+        text-align: center;
+        button {
+            width: auto;
+            padding: $sc-padding-lv2;
+            margin: $sc-margin-lv2 0 $sc-margin-lv1 0;
+            text-align: center;
+            float: none;
+            display: inline-block;
+        }
+    }
+}
+
+// Tavano Team - Top Categories Four Columns
+.tt-top-categories-four-columns {
+    .tt-top-categories-four-columns-container {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    .tt-top-categories-four-columns-category {
+        @extend .col-sm-6;
+        @extend .col-md-3;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        padding: $sc-padding-lv4;
+    }
+    .tt-top-categories-four-columns-img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .tt-top-categories-four-columns-content {
+        text-align: left;
+        @media (max-width: $screen-sm-max) {
+            max-width: 300px;
+        }
+        h4 {
+            font-size: $sc-font-size-m;
+            text-transform: capitalize;
+        }
+        p {
+            color: $sc-color-copy-light;
+        }
+    }
+}
+// Tavano Team - Top Categories Four Columns - Effect 01
+$tt-top-categories-fourcolumns-transition-speed: 0.3s;
+.tt-tp-fc-eff-01 {
+    .tt-top-categories-four-columns-link {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: rgb(0, 0, 0);
+    }
+    .tt-top-categories-four-columns-img {
+        display: block;
+        opacity: 0.8;
+        transition: $tt-top-categories-fourcolumns-transition-speed;
+    }
+    .tt-top-categories-four-columns-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 20px;
+        width: calc(100% - 40px);
+        h4 {
+            color: white;
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 10px;
+        }
+        h4::after {
+            content: '';
+            position: absolute;
+            width: 0%;
+            bottom: 0;
+            left: 0;
+            border-bottom: 2px solid rgb(255, 255, 255);
+            transition: $tt-top-categories-fourcolumns-transition-speed;
+        }
+        p {
+            color: rgb(255, 255, 255);
+            opacity: 0;
+            margin-left: $sc-margin-lv5 * 2;
+            transition: $tt-top-categories-fourcolumns-transition-speed;
+        }
+    }
+}
+@media (min-width: $screen-md-min) {
+    .tt-tp-fc-eff-01 > .tt-top-categories-four-columns-link:hover {
+        .tt-top-categories-four-columns-img {
+            opacity: 0.4;
+            @include scale(1.1);
+        }
+        h4::after {
+            width: 100%;
+        }
+        p {
+            opacity: 1;
+            margin-left: 0px;
+        }
+    }
+}
+// Tavano Team - Top Categories Four Columns - Effect 02
+$tt-top-categories-fourcolumns-transition-speed: 0.3s;
+.tt-tp-fc-eff-02 {
+    .tt-top-categories-four-columns-link {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: rgb(0, 0, 0);
+    }
+    .tt-top-categories-four-columns-img {
+        display: block;
+        opacity: 1;
+        @include scale(1.1);
+        transition: $tt-top-categories-fourcolumns-transition-speed;
+    }
+    .tt-top-categories-four-columns-content {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-bottom: 0px solid $sc-color-primary;
+        transition: $tt-top-categories-fourcolumns-transition-speed;
+        h4,
+        p {
+            width: 100%;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            margin-bottom: $sc-margin-lv2;
+            opacity: 0;
+            transition: $tt-top-categories-fourcolumns-transition-speed;
+        }
+        p {
+            margin-bottom: $sc-margin-lv6 * 2;
+        }
+    }
+}
+@media (min-width: $screen-md-min) {
+    .tt-tp-fc-eff-02:hover {
+        .tt-top-categories-four-columns-img {
+            opacity: 0.4;
+            @include scale(1);
+        }
+        .tt-top-categories-four-columns-content {
+            border-bottom-width: $sc-margin-lv2;
+        }
+        h4 {
+            opacity: 1;
+        }
+        p {
+            opacity: 1;
+            margin-bottom: $sc-margin-lv6;
+        }
+    }
+}
+// Tavano Team - Top Categories Four Columns - Effect 03
+$tt-top-categories-fourcolumns-transition-speed: 0.3s;
+.tt-tp-fc-eff-03 {
+    .tt-top-categories-four-columns-link {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: rgb(0, 0, 0);
+    }
+    .tt-top-categories-four-columns-img {
+        position: relative;
+        display: block;
+        height: calc(100% - 20px);
+        bottom: 20px;
+        transition: $tt-top-categories-fourcolumns-transition-speed;
+    }
+    .tt-top-categories-four-columns-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: $sc-padding-lv4;
+        width: 100%;
+        background-color: rgb(51, 51, 51);
+        h4 {
+            color: rgb(255, 255, 255);
+            position: relative;
+            margin-bottom: 0px;
+            transition: $tt-top-categories-fourcolumns-transition-speed;
+        }
+        p {
+            color: rgb(255, 255, 255);
+            max-height: 0;
+            opacity: 0;
+            transition: $tt-top-categories-fourcolumns-transition-speed;
+        }
+    }
+}
+@media (min-width: $screen-md-min) {
+    .tt-tp-fc-eff-03:hover {
+        .tt-top-categories-four-columns-img {
+            bottom: 40px;
+        }
+        h4 {
+            margin-bottom: $sc-margin-lv1;
+        }
+        p {
+            opacity: 1;
+            max-height: 50px;
+        }
+    }
+}
+// Tavano Team - Top Categories Four Columns - Effect 04
+$tt-top-categories-fourcolumns-transition-speed: 0.3s;
+.tt-tp-fc-eff-04 {
+    .tt-top-categories-four-columns-link {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: rgb(0, 0, 0);
+    }
+    .tt-top-categories-four-columns-img {
+        position: relative;
+        display: block;
+        bottom: 0;
+        transition: $tt-top-categories-fourcolumns-transition-speed;
+    }
+    .tt-top-categories-four-columns-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        width: 100%;
+        @include translate(-50%, -50%);
+        text-align: center;
+        transition: $tt-top-categories-fourcolumns-transition-speed;
+        h4,
+        p {
+            display: inline-block;
+            padding: 5px 10px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(36, 36, 36);
+            transition: $tt-top-categories-fourcolumns-transition-speed;
+        }
+        h4 {
+            margin-bottom: $sc-margin-lv1;
+        }
+    }
+}
+@media (min-width: $screen-md-min) {
+    .tt-tp-fc-eff-04:hover {
+        .tt-top-categories-four-columns-img {
+            @include scale(1.07);
+        }
+        .tt-top-categories-four-columns-content {
+            opacity: 1;
+        }
+    }
+}
+
+// Tavano Team - Two Half Banners
+$tt-two-half-banners-titles-font-size-desktop: 50px;
+$tt-two-half-banners-titles-font-size-mobile: 30px;
+.tt-two-half-banners {
+    @extend .container;
+    @include banner-text-shadow;
+    padding-top: $sc-padding-lv4;
+}
+.tt-two-half-banners-content {
+    @extend .col-sm-6;
+    @extend .col-xs-12;
+    position: relative;
+    height: 300px;
+    padding: $sc-padding-lv4;
+    padding-bottom: 0;
+    .tt-two-half-banners-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .tt-two-half-banners-title {
+        position: absolute;        
+        color: rgb(255, 255, 255);
+        top: 50%;
+        left: 50%;
+        @include translate(-50%, -50%);
+        @include banner-text-shadow;
+        font-size: $tt-two-half-banners-titles-font-size-desktop;
+        line-height: $tt-two-half-banners-titles-font-size-desktop;
+        @media (max-width: $screen-sm-max) {
+            font-size: $tt-two-half-banners-titles-font-size-mobile;
+            line-height: $tt-two-half-banners-titles-font-size-mobile;
+        }
+    }
+}
+
+// Tavano Team Overrides - Columns - Three Columns Primary Background
+.columns-three-columns-primary-background {
+    background-color: lighten($sc-color-primary, 8);
+    #cct_netsuite_columns {
+        @extend .container;
+    }
+    h3 {
+        color: rgb(255, 255, 255) !important;
+        letter-spacing: 2px;
+    }
+    .columnscct-column-container {
+        padding: $sc-padding-lv4 !important;
+    }
+    .col-icon { // temporary class
+        display: none;
+    }
+}
+
+// Tavano Team Overrides - Columns - Three Columns Three Colors
+.columns-three-columns-three-colors {
+    background-color: $sc-neutral-shade-700;
+    #cct_netsuite_columns {
+        @extend .container;
+        @media (max-width: $screen-xs-max) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .columnscct-layout {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        @media (max-width: $screen-xs-max) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    h3, p {
+        color: rgb(255, 255, 255) !important;
+    }
+    h3 {
+        letter-spacing: 2px;
+    }
+    .columnscct-column-container {
+        padding: $sc-padding-lv8 $sc-padding-lv4;
+        @media (min-width: $screen-sm-min) {
+            display: table-cell;
+        }
+    }
+    .columnscct-column-container:nth-child(2) {
+        background-color: lighten($sc-neutral-shade-700, 8);
+    }
+}
+
+// Tavano Team Overrides - Columns - H1 Section
+.columns-h1-section {
+    background-color: $sc-color-theme-100;
+    #cct_netsuite_columns {
+        @extend .container;
+    }
+    .columnscct-column-container {
+        width: 100% !important;
+        padding: $sc-padding-lv6;
+    }
+    p {
+        margin-top: $sc-margin-lv1;
+    }
+    .columnscct-button {
+        @extend .button-secondary;
+    }
+}
+
+// Tavano Team Override - Logo List
+.logolist-override {
+    #cct_netsuite_logolist {
+        margin-top: $sc-margin-lv8;
+        margin-bottom: $sc-margin-lv8;
+    }
+}
