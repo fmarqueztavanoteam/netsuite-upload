@@ -1,9 +1,9 @@
 const Handlebars = require('handlebars');
+const OAuth1 = require('oauth1').OAuth1;
 const fs = require('fs');
 const path = require('path');
 const tool = require('./tool');
 const _ = require('underscore');
-const { OAuth1 } = require('oauth1');
 
 // @module suitetalk @class SuiteTalk
 
@@ -88,15 +88,26 @@ _(tool).extend({
 	}
 
 	// @method _template
-,	_template: async function(file_name, params)
+,   _template: function(file_name, params)
 	{
-		const oauth1 = new OAuth1(this.credentials);
-		const credentials = await oauth1.soapAuthorize(this.credentials.authID);
-		params.credentials = { ...this.credentials, ...credentials };
-		this._initTemplateContext(params);
-		var fileName = path.join(__dirname, '/templates/', file_name);
-		var template = Handlebars.compile(fs.readFileSync(fileName, {encoding: 'utf8'}).toString());
-		return template(params);
+	    var self = this;
+	    var oauth1 = new OAuth1(this.credentials);
+	    return oauth1.soapAuthorize(this.credentials.authID).then(function(credentials) {
+	        self._initTemplateContext(params);
+	        params.credentials = params.credentials || {};
+	        params.credentials.vm = self.credentials.vm;
+	        params.credentials.molecule = self.credentials.molecule;
+	        params.credentials.authID = self.credentials.authID;
+	        params.credentials.token = credentials.token || self.credentials.token;
+	        params.credentials.signature = credentials.signature || self.credentials.signature;
+	        params.credentials.nonce = credentials.nonce || self.credentials.nonce;
+	        params.credentials.timestamp = credentials.timestamp || self.credentials.timestamp;
+	        params.credentials.account = credentials.account || self.credentials.account;
+	        params.credentials.consumerKey = credentials.consumerKey || self.credentials.consumerKey;
+	        var fileName = path.join(__dirname, '/templates/', file_name);
+	        var template = Handlebars.compile(fs.readFileSync(fileName, {encoding: 'utf8'}).toString());
+	        return template(params);
+	    });
 	}
 });
 
