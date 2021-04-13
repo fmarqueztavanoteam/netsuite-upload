@@ -1,15 +1,15 @@
 {
-    "name": "TT_Base_Theme_Landmark_2020_2",
-    "fantasyName": "Tavano Team Base Theme Landmark 2020.2",
+    "name": "TT_Hyperion_Partners_Theme_Landmark_2020_2",
+    "fantasyName": "Hyperion Partners LLC Theme Landmark 2020.2",
     "vendor": "Tavanoteam",
-    "version": "1.0.2",
+    "version": "1.0.0",
     "type": "theme",
     "target": "SCA,SCS",
     "target_version": {
         "SCA": ">=19.1.0",
         "SCS": ">=19.1.0"
     },
-    "description": "Landmark base theme developed by Tavano Team",
+    "description": "Hyperion Partners LLC SCA Theme Developed By Tavano Team.",
     "override": [
         {
             "src": "Overrides/SuiteCommerce/InventoryDisplay/Modules/InventoryDisplay/Templates/suitecommerce_inventorydisplay.tpl",
@@ -1398,5 +1398,5 @@
             }
         }
     },
-    "local_folder": "Workspace/TT_Base_Theme_Landmark_2020_2"
+    "local_folder": "Workspace/TT_Hyperion_Partners_Theme_Landmark_2020_2"
 }
