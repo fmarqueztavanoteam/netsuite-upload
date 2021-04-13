@@ -20,8 +20,8 @@
         "deploy": "DeployDistribution",
         "extensions_dest_name": "Deploy_Extensions",
         "extmech_parent": "-15",
-        "theme_path": "Workspace/TT_Base_Theme_Landmark_2020_2",
-        "overrides_path": "Workspace/TT_Base_Theme_Landmark_2020_2/Overrides"
+        "theme_path": "Workspace/TT_Hyperion_Partners_LLC_Theme_Landmark_2020_2",
+        "overrides_path": "Workspace/TT_Hyperion_Partners_LLC_Theme_Landmark_2020_2/Overrides"
     },
     "application": {
         "application_manifest": {
@@ -69,8 +69,7 @@
         }
     },
     "deploy_config": {
-        "update": true,
-        "chunk_size": 80
+        "create": true
     },
     "credentials": {
         "user_agent": "sc-theme-devtools/2020.2.1",
@@ -83,7 +82,11 @@
         "domain": "dev-hyperionpartnersportal.tavanoapps.com",
         "webapp_id": "1106",
         "ssp_folder": "1106",
-        "is_scis": false
+        "is_scis": false,
+        "target_folder": {
+            "parentId": "-15",
+            "folderName": "Deploy_Extensions"
+        }
     },
     "nsdeployPath": ".nsdeploy",
     "_": [
@@ -2859,5 +2862,7 @@
             "activation_id": "1",
             "extension_id": "501"
         }
-    ]
+    ],
+    "create": true,
+    "deploy_config:create": true
 }
