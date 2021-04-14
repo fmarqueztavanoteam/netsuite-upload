@@ -5,7 +5,7 @@
 			{{#if ttFooterExtension.copyright}}
 				{{{ttFooterExtension.copyright}}}
 			{{else}}
-				Hyperion Partners. All rights reserved - Copyright © 2021
+				Tavano Team. All rights reserved - Copyright © 2020
 			{{/if}}
 		</div>
 
@@ -18,7 +18,7 @@
 		{{/if}}
 
 		<div data-cms-area="tt-landmark_footer_content-bottom" data-cms-area-filters="global"></div>
-
+		
 	</div>
 </div>
 

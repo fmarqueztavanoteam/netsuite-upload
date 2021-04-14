@@ -13,7 +13,7 @@
 // $sc-color-primary: #a8815d
 //
 // Styleguide 1.1.2
-$sc-color-primary: #011E41; /* editable({"type": "color", "label": "Highlight Color", "description": "Used mainly for 'call to action' elements such as 'Buy now' buttons an highlighted elements such as the Minicart Icon."}) */
+$sc-color-primary: rgb(168, 129, 93); /* editable({"type": "color", "label": "Highlight Color", "description": "Used mainly for 'call to action' elements such as 'Buy now' buttons an highlighted elements such as the Minicart Icon."}) */
 
 // Secondary Color
 //
@@ -136,10 +136,3 @@ $sc-color-link-active: $sc-color-primary; /* editable({"type": "color", "label":
 $sc-color-copy-dark: rgb(0, 0, 0); /* editable({"type": "color", "label": "Dark"}) */
 $sc-color-copy: rgb(77, 82, 86); /* editable({"type": "color", "label": "Text"}) */
 $sc-color-copy-light: rgb(160, 160, 160); /* editable({"type": "color", "label": "Light"}) */
-
-//////////////////////////////////////////////////
-
-$hyperion-accent-color-1:                 #FFFFFF;
-$hyperion-accent-color-2:                 #A0D100;
-
-//////////////////////////////////////////////////

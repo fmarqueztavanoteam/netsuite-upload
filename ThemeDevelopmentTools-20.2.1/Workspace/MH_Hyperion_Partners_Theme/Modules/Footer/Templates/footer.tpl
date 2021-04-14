@@ -35,7 +35,7 @@
 				{{/each}}
 			</ul>
 		{{/each}}
-
+		
 		{{#unless ttFooterExtension}}
 			<div id="content-footer1">
 				<div data-cms-area="tt-landmark_footer_content1" data-cms-area-filters="global"></div>
@@ -59,15 +59,15 @@
 </div>
 <div class="footer-content-bottom">
 	<div class="footer-content-bottom-container">
-
+		
 		<div class="footer-content-bottom-copyright">
 			{{#if ttFooterExtension.copyright}}
 				{{{ttFooterExtension.copyright}}}
 			{{else}}
-				Hyperion Partners. All rights reserved - Copyright © 2021
+				Tavano Team. All rights reserved - Copyright © 2020
 			{{/if}}
 		</div>
-
+		
 		{{#if ttFooterExtension.payments}}
 			<div class="footer-bottom-content-payment-cards">
 				{{#each ttFooterExtension.payments}}
@@ -88,5 +88,6 @@ Use the following context variables when customizing this template:
 
 	showFooterNavigationLinks (Boolean)
 	footerNavigationLinks (Array)
-
+	
 ----}}
+

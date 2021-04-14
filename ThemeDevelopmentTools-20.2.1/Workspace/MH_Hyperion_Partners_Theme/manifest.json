@@ -1,7 +1,7 @@
 {
-    "name": "TT_Hyperion_Partners_LLC_Theme_Landmark_2020_2",
-    "fantasyName": "Hyperion Partners LLC Theme Landmark 2020.2",
-    "vendor": "Tavanoteam",
+    "name": "MH_Hyperion_Partners_Theme",
+    "fantasyName": "MH Hyperion Partners Theme",
+    "vendor": "MyersHolum",
     "version": "1.0.0",
     "type": "theme",
     "target": "SCA,SCS",
@@ -9,7 +9,7 @@
         "SCA": ">=19.1.0",
         "SCS": ">=19.1.0"
     },
-    "description": "Hyperion Partners LLC SCA Theme Developed By Tavano Team.",
+    "description": "Hyperion Partners SCA Theme Developed By Myers-Holum.",
     "override": [
         {
             "src": "Overrides/SuiteCommerce/InventoryDisplay/Modules/InventoryDisplay/Templates/suitecommerce_inventorydisplay.tpl",
@@ -1398,5 +1398,5 @@
             }
         }
     },
-    "local_folder": "Workspace/TT_Hyperion_Partners_LLC_Theme_Landmark_2020_2"
+    "local_folder": "Workspace/MH_Hyperion_Partners_Theme"
 }
