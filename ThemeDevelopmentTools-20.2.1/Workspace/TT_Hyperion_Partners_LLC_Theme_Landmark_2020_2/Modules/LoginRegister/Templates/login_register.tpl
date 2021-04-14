@@ -1,5 +1,6 @@
 <section class="login-register" >
 
+	{{!--
 	<header class="login-register-header">
 		{{#if showRegister}}
 		<h1 class="login-register-title"> {{translate 'Log in | Register'}}</h1>
@@ -7,6 +8,7 @@
 		<h1 class="login-register-title"> {{translate 'Log in'}}</h1>
 		{{/if}}
 	</header>
+	--}}
 
 	<div {{#if showRegister}} class="login-register-body" {{else}} class="login-register-body-colored" {{/if}}>
 

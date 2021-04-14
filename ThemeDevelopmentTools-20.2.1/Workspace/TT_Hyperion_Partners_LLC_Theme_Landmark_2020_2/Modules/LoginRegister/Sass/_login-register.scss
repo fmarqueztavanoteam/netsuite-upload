@@ -1,36 +1,80 @@
-.login-register-header{
+//////////////////////////////////////////////////
+
+// SPLASH PAGE.
+.sec_LoginRegister {
+	background-image: url('https://dev-hyperionpartnersportal.tavanoapps.com/Hyperion-Images/Splash-Page/Hyperion-Splash-Page-Background.jpeg'),
+										url('/Hyperion-Images/Splash-Page/Hyperion-Splash-Page-Background.jpeg');
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.sec_LoginRegister #main-container { margin: 0; }
+
+.sec_LoginRegister .footer-simplified-content.footer-content-bottom {
+	background: transparent;
+  border-color: rgba(255, 255, 255, .15);
+}
+
+//////////////////////////////////////////////////
+
+.login-register-wrapper-login {
+	p,
+	h2,
+	label,
+	small { color: $hyperion-accent-color-1; }
+}
+
+.login-register-header {
 	@extend .row;
 	margin-bottom: $sc-margin-lv4;
 }
 
-.login-register-title{
-	@extend .col-xs-12;
-}
+.login-register-title { @extend .col-xs-12; }
 
-.login-register-body{
-	@extend .row;
-}
+.login-register-body { @extend .row; }
 
-.login-register-body-colored{
+.login-register-body-colored {
 	@extend .login-register-body;
-	background-color: $sc-color-theme-background;
 
 	padding: $sc-padding-lv8 $sc-padding-lv1;
 
-	@media (min-width: $screen-md-min){
-		padding: $sc-padding-lv8 $sc-padding-lv5;
+	@media (min-width: $screen-md-min) { padding: $sc-padding-lv8 $sc-padding-lv5; }
+}
+
+.sec_LoginRegister {
+	#main-container,
+	div[id*="LoginRegister.View"],
+	.login-register,
+	.login-register-body-colored {
+		@media (min-width: $screen-sm-min) { min-height: 550px !important; }
 	}
 }
 
+.login-register-body-colored {
+	@media (min-width: $screen-sm-min) { position: relative; }
+}
+
+.login-register-wrapper-column-login {
+	@media (min-width: $screen-sm-min) {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+// REQUIRED '*'.
+.sec_LoginRegister {
+	.login-register-login-form-required { color: $hyperion-accent-color-2; }
+}
+
 .login-register-wrapper-column-login,
-.login-register-wrapper-column-register{
+.login-register-wrapper-column-register {
 	@extend .col-xs-12;
 	@extend .col-sm-6;
 }
 
+.login-register-wrapper-login { margin: 0; }
+
 .login-register-wrapper-login,
-.login-register-wrapper-register{
-	@extend .box-column;
-}
-
-
+.login-register-wrapper-register { @extend .box-column; }
