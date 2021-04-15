@@ -1,38 +1,25 @@
-.login-register-checkout-as-guest-header{
-	margin-bottom: $sc-margin-lv4;
-}
+.login-register-checkout-as-guest-header { margin-bottom: $sc-margin-lv4; }
 
-.login-register-checkout-as-guest-body {
-	margin-bottom: $sc-margin-lv6;
-}
+.login-register-checkout-as-guest-body { margin-bottom: $sc-margin-lv6; }
 
-.login-register-checkout-as-guest-description{
+.login-register-checkout-as-guest-description {
 	margin-top: $sc-margin-lv4;
 	margin-bottom: $sc-margin-lv4;
 }
 
-.login-register-checkout-as-guest-control-group{
-	margin-top: $sc-margin-lv4;
-}
+.login-register-checkout-as-guest-control-group { margin-top: $sc-margin-lv4; }
 
+.login-register-checkout-as-guest-required { @extend .input-required; }
 
-
-.login-register-checkout-as-guest-required{
-	@extend .input-required;
-}
-
-.login-register-checkout-as-guest-input{
-	@extend .input-large;
-}
+.login-register-checkout-as-guest-input { @extend .input-large; }
 
 .login-register-checkout-as-guest-submit,
-.login-register-checkout-as-guest-button-show
-{
+.login-register-checkout-as-guest-button-show {
 	@extend .button-large;
 	@extend .button-secondary;
 }
 
-.login-register-checkout-as-guest-form-messages{
+.login-register-checkout-as-guest-form-messages {
 	margin-top: $sc-margin-lv4;
 
 	.global-views-message-error {
@@ -40,16 +27,7 @@
 		margin-bottom: 0;
 	}
 
-	.global-views-message-button {
-		display: none;
-	}
+	.global-views-message-button { display: none; }
 }
 
-.login-register-checkout-as-guest-form-controls-group{
-	@extend .login-register-register-form-controls-group;
-}
-
-
-
-
-
+.login-register-checkout-as-guest-form-controls-group { @extend .login-register-register-form-controls-group; }

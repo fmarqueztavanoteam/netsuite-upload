@@ -38,28 +38,18 @@
 
 //////////////////////////////////////////////////
 
-.login-register-login-required {
-	color: $sc-color-copy;
-}
+.login-register-login-required { color: $sc-color-copy; }
 
 .login-register-login-description{
 	margin-top: $sc-margin-lv4;
 	margin-bottom: $sc-margin-lv4;
 }
 
-.login-register-login-form-controls-group{
-	margin-top: $sc-margin-lv4;
-}
+.login-register-login-form-controls-group { margin-top: $sc-margin-lv4; }
 
+.login-register-login-form-required { @extend .input-required; }
 
-
-.login-register-login-form-required {
-	@extend .input-required;
-}
-
-.login-register-login-form-input {
-	@extend .input-large;
-}
+.login-register-login-form-input { @extend .input-large; }
 
 .login-register-login-submit {
 	@extend .button-large;
@@ -102,14 +92,9 @@
 	@extend .global-views-message-error;
 }
 
-.login-register-login-form-controls-group {
-	@extend .login-register-register-form-controls-group;
-}
+.login-register-login-form-controls-group { @extend .login-register-register-form-controls-group; }
 
-
-.login-register-login-form-controls {
-	@extend .login-register-register-form-controls !optional;
-}
+.login-register-login-form-controls { @extend .login-register-register-form-controls !optional; }
 
 .login-register-login-form-controls-group { margin-top: $sc-margin-lv4; }
 

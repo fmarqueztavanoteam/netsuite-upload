@@ -25,37 +25,25 @@
 
 //////////////////////////////////////////////////
 
-.login-register-register-required {
-	color: $sc-color-copy;
-}
+.login-register-register-required { color: $sc-color-copy; }
 
-.login-register-register-form-description{
+.login-register-register-form-description {
 	margin-top: $sc-margin-lv4;
 	margin-bottom: $sc-margin-lv4;
 }
 
-.login-register-register-form-controls-group{
-	margin-top: $sc-margin-lv4;
-}
+.login-register-register-form-controls-group { margin-top: $sc-margin-lv4; }
 
+.login-register-register-form-required { @extend .input-required; }
 
+.login-register-register-form-input { @extend .input-large; }
 
-
-
-.login-register-register-form-required{
-	@extend .input-required;
-}
-
-.login-register-register-form-input{
-	@extend .input-large;
-}
-
-.login-register-register-form-submit{
+.login-register-register-form-submit {
 	@extend .button-large;
 	@extend .button-primary;
 }
 
-.login-register-register-form-messages{
+.login-register-register-form-messages {
 	margin-top: $sc-margin-lv4;
 
 	.global-views-message-error {
@@ -63,9 +51,7 @@
 		margin-bottom: 0;
 	}
 
-	.global-views-message-button {
-		display: none;
-	}
+	.global-views-message-button { display: none; }
 }
 
 .sec_LoginRegister {
