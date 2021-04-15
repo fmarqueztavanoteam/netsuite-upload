@@ -20,8 +20,8 @@
         "deploy": "DeployDistribution",
         "extensions_dest_name": "Deploy_Extensions",
         "extmech_parent": "-15",
-        "theme_path": "Workspace/TT_Hyperion_Partners_LLC_Theme_Landmark_2020_2",
-        "overrides_path": "Workspace/TT_Hyperion_Partners_LLC_Theme_Landmark_2020_2/Overrides"
+        "theme_path": "Workspace/MH_Hyperion_Partners_Theme",
+        "overrides_path": "Workspace/MH_Hyperion_Partners_Theme/Overrides"
     },
     "application": {
         "application_manifest": {
@@ -69,7 +69,8 @@
         }
     },
     "deploy_config": {
-        "create": true
+        "update": true,
+        "chunk_size": 80
     },
     "credentials": {
         "user_agent": "sc-theme-devtools/2020.2.1",
@@ -79,10 +80,6 @@
         "account": "5330455",
         "hostname": "5330455.restlets.api.netsuite.com",
         "website": 2,
-        "domain": "dev-hyperionpartnersportal.tavanoapps.com",
-        "webapp_id": "1106",
-        "ssp_folder": "1106",
-        "is_scis": false,
         "target_folder": {
             "parentId": "-15",
             "folderName": "Deploy_Extensions"
@@ -92,10 +89,8 @@
     "_": [
         "theme:local"
     ],
-    "to": true,
     "product": "gulp",
     "$0": "/Users/Fede/.nvm/versions/node/v12.16.0/bin/gulp",
-    "ask_credentials": true,
     "applicationactivation_manifest": [
         {
             "name": "InventoryDisplay",
@@ -380,17 +375,17 @@
             "extension_id": "1501"
         },
         {
-            "name": "TT_Base_Theme_Landmark_2020_2",
-            "fantasyName": "Tavano Team Base Theme Landmark 2020.2",
-            "vendor": "Tavanoteam",
+            "name": "MH_Hyperion_Partners_Theme",
+            "fantasyName": "MH Hyperion Partners Theme",
+            "vendor": "MyersHolum",
             "type": "theme",
             "target": "SCA,SCS",
             "target_version": {
                 "SCA": ">=19.1.0",
                 "SCS": ">=19.1.0"
             },
-            "version": "1.0.2",
-            "description": "Landmark base theme developed by Tavano Team",
+            "version": "1.0.0",
+            "description": "Hyperion Partners SCA Theme Developed By Myers-Holum.",
             "override": [
                 {
                     "src": "Overrides/SuiteCommerce/InventoryDisplay/Modules/InventoryDisplay/Templates/suitecommerce_inventorydisplay.tpl",
@@ -1779,9 +1774,9 @@
                     ]
                 }
             },
-            "path": "SuiteScripts/extensions/Tavanoteam/TT_Base_Theme_Landmark_2020_2@1.0.2",
+            "path": "SuiteScripts/Deploy_Extensions/MyersHolum/MH_Hyperion_Partners_Theme@1.0.0",
             "activation_id": "1",
-            "extension_id": "301"
+            "extension_id": "1901"
         },
         {
             "name": "TavanoTeam_Anchor_Scroll_Extension",
@@ -2863,6 +2858,6 @@
             "extension_id": "501"
         }
     ],
-    "create": true,
-    "deploy_config:create": true
+    "to": true,
+    "advanced": true
 }

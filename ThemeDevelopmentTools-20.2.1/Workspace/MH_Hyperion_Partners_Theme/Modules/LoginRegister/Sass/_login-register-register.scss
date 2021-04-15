@@ -1,3 +1,30 @@
+//////////////////////////////////////////////////
+
+// SPLASH PAGE.
+.sec_LoginRegister {
+	background-image: url('https://dev-hyperionpartnersportal.tavanoapps.com/Hyperion-Images/Splash-Page/Hyperion-Splash-Page-Background.jpeg'),
+										url('/Hyperion-Images/Splash-Page/Hyperion-Splash-Page-Background.jpeg');
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.sec_LoginRegister #main-container { margin: 0; }
+
+.sec_LoginRegister .footer-simplified-content.footer-content-bottom {
+	background: transparent;
+  border-color: rgba(255, 255, 255, .15);
+}
+
+.login-register-wrapper-login {
+	p,
+	h2,
+	label,
+	small { color: $hyperion-accent-color-1; }
+}
+
+//////////////////////////////////////////////////
+
 .login-register-register-required {
 	color: $sc-color-copy;
 }
@@ -41,9 +68,33 @@
 	}
 }
 
+.sec_LoginRegister {
+	#main-container,
+	div[id*="LoginRegister.View"],
+	.login-register,
+	.login-register-body-colored {
+		@media (min-width: $screen-sm-min) { min-height: 550px !important; }
+	}
+}
 
+.login-register-body-colored {
+	background: none !important;
 
+	@media (min-width: $screen-sm-min) { position: relative; }
 
+}
 
+.login-register-wrapper-column-login {
+	@media (min-width: $screen-sm-min) {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
 
+// REQUIRED '*'.
+.sec_LoginRegister {
+	.login-register-login-form-required { color: $hyperion-accent-color-2; }
+}
 
+.login-register-wrapper-login { margin: 0; }

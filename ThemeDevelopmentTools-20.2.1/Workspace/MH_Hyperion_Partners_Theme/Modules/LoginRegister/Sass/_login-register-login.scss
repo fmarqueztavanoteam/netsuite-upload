@@ -1,3 +1,43 @@
+//////////////////////////////////////////////////
+
+.log-in-button {
+	background: $hyperion-accent-color-2;
+	color: $sc-button-primary-text-color;
+	font-weight: $sc-font-weight-normal;
+	border: 1px solid $hyperion-accent-color-2;
+	border-radius: $sc-button-primary-border-radius;
+	@include border-radius($sc-button-primary-border-radius);
+	text-transform: $sc-button-primary-text-transform;
+	display: inline-block;
+
+	@include transition (200ms ease);
+
+	&:hover {
+		color: $hyperion-accent-color-2;
+		background: $sc-button-primary-hover-background-color;
+		border-color: $hyperion-accent-color-2;
+		text-decoration: none;
+	}
+
+	&:active,
+	&:focus {
+		color: $hyperion-accent-color-2;
+		background: $sc-button-primary-active-background-color;
+		border-color: $hyperion-accent-color-2;
+	}
+
+	&:disabled, &-disabled {
+		cursor: default;
+		pointer-events: none;
+		opacity: 0.6;
+	}
+
+	@extend %tt-button-primary-animation !optional;
+
+}
+
+//////////////////////////////////////////////////
+
 .login-register-login-required {
 	color: $sc-color-copy;
 }
@@ -23,18 +63,25 @@
 
 .login-register-login-submit {
 	@extend .button-large;
-	@extend .button-primary;
+	@extend .log-in-button;
+	// @extend .button-primary;
 }
 
 .login-register-login-forgot {
-
 	display:inline-block;
 	margin-top: $sc-margin-lv4;
+	color: $hyperion-accent-color-2;
+
+	&:hover,
+	&:focus { color: lighten($hyperion-accent-color-2, 5); }
+
+	&:active { color: $hyperion-accent-color-2; }
 
 	@media (min-width: $screen-sm-min) {
 		margin-top: 0;
 		margin-left: $sc-margin-lv2;
 	}
+
 }
 
 .login-register-login-form-messages {
@@ -64,7 +111,8 @@
 	@extend .login-register-register-form-controls !optional;
 }
 
+.login-register-login-form-controls-group { margin-top: $sc-margin-lv4; }
 
+.login-register-login-form-required { @extend .input-required; }
 
-
-
+.login-register-login-form-input { @extend .input-large; }
