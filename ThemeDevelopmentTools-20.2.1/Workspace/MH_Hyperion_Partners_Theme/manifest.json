@@ -634,7 +634,8 @@
             "Modules/CMSadapter/Sass/_cms-landing-page-about-us.scss",
             "Modules/CMSadapter/Sass/_cms-landing-page-contact-us.scss",
             "Modules/CMSadapter/Sass/_cms-landing-page-terms-conditions.scss",
-            "Modules/BaseSassStyles/Sass/base/_tt_buttons_animations.scss"
+            "Modules/BaseSassStyles/Sass/base/_tt_buttons_animations.scss",
+            "Modules/CMSadapter/Sass/_cms-landing-page-privacy-policy.scss"
         ]
     },
     "templates": {
