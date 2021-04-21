@@ -17,7 +17,7 @@
 }
 
 .login-register-wrapper-login {
-	p,
+	p:not([data-validation-error="block"]),
 	h2,
 	label,
 	small { color: $hyperion-accent-color-1; }
