@@ -20,8 +20,8 @@
 
 		{{#if showRating}}
 		<p class="product-list-display-full-rating">
-				<span data-view="GlobalViews.StarRating"></span>
-			</p>
+			<span data-view="GlobalViews.StarRating"></span>
+		</p>
 		{{/if}}
 
 		<div data-view="Item.SelectedOptions"></div>

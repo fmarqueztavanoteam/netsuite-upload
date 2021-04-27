@@ -23,7 +23,9 @@
 					</div>
 				</div>
 				{{/if}}
-				<div class="product-details-full-rating" data-view="Global.StarRating"></div>
+
+				{{!-- <div class="product-details-full-rating" data-view="Global.StarRating"></div> --}}
+
 				<div data-cms-area="tt-landmark_item_info" data-cms-area-filters="path"></div>
 				<div class="product-details-full-divider"></div>
 			</div>
@@ -90,7 +92,7 @@
 					<div id="banner-details-bottom" class="product-details-full-banner-details-bottom" data-cms-area="tt-landmark_item_info_bottom" data-cms-area-filters="page_type"></div>
 				</div>
 			</div>
-			
+
 		</section>
 
 		<div data-cms-area="tt-landmark_product_details_full_cms_area_5" data-cms-area-filters="page_type"></div>
@@ -98,11 +100,11 @@
 
 		<section data-view="Product.Information"></section>
 
-		{{!--<!-- <div class="product-details-full-divider-desktop"></div> -->--}}
+		{{!-- <div class="product-details-full-divider-desktop"></div> --}}
 
 		<div data-cms-area="tt-landmark_product_details_full_cms_area_7" data-cms-area-filters="path"></div>
 
-		<div class="product-details-full-content-product-reviews" data-view="ProductReviews.Center"></div>
+		{{!-- <div class="product-details-full-content-product-reviews" data-view="ProductReviews.Center"></div> --}}
 
 		<div data-cms-area="tt-landmark_product_details_full_cms_area_8" data-cms-area-filters="path"></div>
 

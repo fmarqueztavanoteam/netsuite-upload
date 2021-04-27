@@ -14,7 +14,7 @@
 		{{/if}}
 	</div>
 	<div class="facets-item-cell-table-content-wrapper">
-		
+
 		{{#if itemIsNavigable}}
 		<a class="facets-item-cell-table-title" href='{{url}}'>
 			<span itemprop="name">{{name}}</span>
@@ -39,10 +39,11 @@
 			<div data-view="ItemViews.Price"></div>
 		</div>
 
+		{{!--
 		{{#if showRating}}
-		<div class="facets-item-cell-table-rating" itemprop="aggregateRating" data-view="GlobalViews.StarRating">
-		</div>
+			<div class="facets-item-cell-table-rating" itemprop="aggregateRating" data-view="GlobalViews.StarRating"></div>
 		{{/if}}
+		--}}
 
 		<div data-view="ItemDetails.Options"></div>
 

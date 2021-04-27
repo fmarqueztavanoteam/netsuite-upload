@@ -16,7 +16,7 @@
 	</div>
 
 	<div class="facets-item-cell-grid-details">
-		
+
 		{{#if itemIsNavigable}}
 		<a class="facets-item-cell-grid-title" href='{{url}}'>
 			<span itemprop="name">{{name}}</span>
@@ -34,16 +34,16 @@
 		</div>
 		{{/if}}
 
-		{{!--<!-- Tavano Team Facets Item Info Extension - MPN -->--}}
+		{{!-- Tavano Team Facets Item Info Extension - MPN --}}
 		<div class="facets-item-cell-grid-mpn" data-view="TT.MPN"></div>
 
-		<div class="facets-item-cell-grid-price" data-view="ItemViews.Price">
-		</div>
+		<div class="facets-item-cell-grid-price" data-view="ItemViews.Price"></div>
 
+		{{!--
 		{{#if showRating}}
-			<div class="facets-item-cell-grid-rating" itemprop="aggregateRating" data-view="GlobalViews.StarRating">
-			</div>
+			<div class="facets-item-cell-grid-rating" itemprop="aggregateRating" data-view="GlobalViews.StarRating"></div>
 		{{/if}}
+		--}}
 
 		<div data-view="ItemDetails.Options"></div>
 
@@ -54,7 +54,7 @@
 		</div>
 
 		<div data-view="StockDescription"></div>
-		
+
 		{{!--<!-- Tavano Team Facets Item Info Extension - Minimum Quantity -->--}}
 		<div class="facets-item-cell-grid-minimum-quantity" data-view="TT.MinimumQuantity"></div>
 

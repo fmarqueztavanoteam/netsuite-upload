@@ -40,19 +40,20 @@
 		</div>
 		{{/if}}
 
-		{{!--<!-- Tavano Team Facets Item Info Extension - MPN -->--}}
+		{{!-- Tavano Team Facets Item Info Extension - MPN --}}
 		<div class="facets-item-cell-list-mpn" data-view="TT.MPN"></div>
 
+		{{!--
 		{{#if showRating}}
-		<div class="facets-item-cell-list-rating" itemprop="aggregateRating" data-view="GlobalViews.StarRating">
-		</div>
+			<div class="facets-item-cell-list-rating" itemprop="aggregateRating" data-view="GlobalViews.StarRating"></div>
 		{{/if}}
+		--}}
 
 		<div data-view="ItemDetails.Options"></div>
 
 		{{!--<!-- Tavano Team Facets Item Info Extension - Store Description -->--}}
 		<div class="facets-item-cell-list-store-description" data-view="TT.StoreDescription"></div>
-		
+
 	</div>
 	<div class="facets-item-cell-list-right">
 		<div class="facets-item-cell-list-price">
