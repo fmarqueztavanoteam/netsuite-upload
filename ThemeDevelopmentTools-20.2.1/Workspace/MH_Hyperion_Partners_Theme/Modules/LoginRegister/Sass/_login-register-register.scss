@@ -1,8 +1,7 @@
 //////////////////////////////////////////////////
 
 // SPLASH PAGE.
-div[class*="sec_LoginRegister"],
-.layout[class*="sec_LoginRegister"] {
+.layout[class*="sec_loginregister"] {
 	background-image: url('https://dev-hyperionpartnersportal.tavanoapps.com/Hyperion-Images/Splash-Page/Hyperion-Splash-Page-Background.jpeg'),
 										url('/Hyperion-Images/Splash-Page/Hyperion-Splash-Page-Background.jpeg');
 	background-position: top;
@@ -10,11 +9,9 @@ div[class*="sec_LoginRegister"],
 	background-repeat: no-repeat;
 }
 
-div[class*="sec_LoginRegister"] #main-container,
-.layout[class*="sec_LoginRegister"] #main-container { margin: 0; }
+.layout[class*="sec_loginregister"] #main-container { margin: 0; }
 
-div[class*="sec_LoginRegister"] .footer-simplified-content.footer-content-bottom,
-.layout[class*="sec_LoginRegister"] .footer-simplified-content.footer-content-bottom {
+.layout[class*="sec_loginregister"] .footer-simplified-content.footer-content-bottom {
 	background: transparent;
   border-color: rgba(255, 255, 255, .15);
 }
@@ -57,8 +54,7 @@ div[class*="sec_LoginRegister"] .footer-simplified-content.footer-content-bottom
 	.global-views-message-button { display: none; }
 }
 
-div[class*="sec_LoginRegister"],
-.layout[class*="sec_LoginRegister"] {
+.layout[class*="sec_loginregister"] {
 	#main-container,
 	div[id*="LoginRegister.View"],
 	.login-register,
@@ -83,8 +79,7 @@ div[class*="sec_LoginRegister"],
 }
 
 // REQUIRED '*'.
-div[class*="sec_LoginRegister"],
-.layout[class*="sec_LoginRegister"] {
+.layout[class*="sec_loginregister"] {
 	.login-register-login-form-required { color: $hyperion-accent-color-2; }
 }
 
