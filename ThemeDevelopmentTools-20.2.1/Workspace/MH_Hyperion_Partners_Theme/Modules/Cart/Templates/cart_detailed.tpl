@@ -55,6 +55,9 @@
 		</section>
 		{{/if}}
 	</div>
+
+	{{!-- SAVED FOR LATER --}}
+	{{!--
 	<div class="cart-detailed-footer">
 		{{#if showLines}}
 			<div data-view="SavedForLater" class="cart-detailed-savedforlater"></div>
@@ -66,6 +69,7 @@
 			<div data-view="SavedForLater" class="cart-detailed-savedforlater"></div>
 		{{/if}}
 	</div>
+	--}}
 
 	<div data-cms-area="tt-landmark_cart_detailed_cms_area_3" data-cms-area-filters="path"></div>
 </div>

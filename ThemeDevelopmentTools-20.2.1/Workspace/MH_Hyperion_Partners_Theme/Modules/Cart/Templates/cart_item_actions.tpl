@@ -1,11 +1,15 @@
 <div class="cart-item-actions-links">
 	{{#if isAdvanced}}
+
+		{{!--
 		{{#if showSaveForLateButton}}
 		<a class="cart-item-actions-item-list-actionable-edit-content-saveforlater" data-action="save-for-later-item" data-internalid="{{lineId}}" title="Save For Later">
 			<i class="cart-item-actions-item-list-actionable-edit-content-saveforlater-icon" aria-hidden="true"></i>
 			<span class="cart-item-actions-item-list-actionable-edit-content-legend">{{translate 'Save for Later'}}</span>
 		</a>
 		{{/if}}
+		--}}
+
 		<a href="{{editUrl}}" class="cart-item-actions-item-list-actionable-edit-button-edit" data-toggle="show-in-modal" title="Edit">
 			<i class="cart-item-actions-item-list-actionable-edit-button-edit-icon" aria-hidden="true"></i>
 			<span class="cart-item-actions-item-list-actionable-edit-content-legend">{{translate 'Edit'}}</span>
@@ -21,8 +25,8 @@
 
 
 {{!----
-Use the following context variables when customizing this template: 
-	
+Use the following context variables when customizing this template:
+
 	line (Object)
 	line.item (Object)
 	line.item.internalid (Number)
