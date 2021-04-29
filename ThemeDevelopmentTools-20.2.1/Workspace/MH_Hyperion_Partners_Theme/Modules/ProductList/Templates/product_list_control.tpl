@@ -4,7 +4,7 @@
 		</button>
 	{{else}}
 		<button class="product-list-control-button-wishlist" data-action="show-productlist-control" data-toggle="showFlyout" type="button" >
-			{{translate 'Add to Wishlist'}}
+			{{translate 'Add to Saved Items'}}
 		</button>
 	{{/if}}
 	<div class="product-list-control-flyout {{#if isMoving}}product-list-control-move{{/if}}" data-type="productlist-control" {{#if showControl}}style="display: block"{{/if}} data-dropdown-content>
@@ -47,8 +47,8 @@
 
 
 {{!----
-Use the following context variables when customizing this template: 
-	
+Use the following context variables when customizing this template:
+
 	isMoving (Boolean)
 	showControl (Boolean)
 	isEmpty (Boolean)
