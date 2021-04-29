@@ -1,15 +1,87 @@
+// COOKIES MESSage.
 .cookie-warning-banner-view {
-	@extend .global-views-message;
-	@extend .global-views-message-info;
-	
-	div {
-		color: $sc-color-copy;
-		font-size: $tt-top-menu-font-size;
+	// @extend .global-views-message;
+	// @extend .global-views-message-info;
+
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: $sc-padding-lv4 $sc-padding-lv8;
+	background: $sc-color-primary;
+	z-index: 999;
+
+	@media (min-width: $screen-sm-min) { padding: $sc-padding-lv3; }
+
+}
+
+// LEFT CONTENT.
+.cookieMessageLeftContent {
+	font-size: .75rem;
+	font-weight: $sc-font-weight-light;
+	color: $hyperion-accent-color-1;
+
+	@media (min-width: $screen-sm-min) {
+		width: 75%;
+		float: left;
+		font-size: .825rem;
 	}
+
+	@media (min-width: $screen-lg-min) { width: 85%; }
+
+}
+
+// RIGHT CONTENT.
+.cookieMessageRightContent {
+	padding: $sc-padding-lv2 0 0 0;
+
+	@media (min-width: $screen-sm-min) {
+		width: 25%;
+		float: left;
+		padding: 0 $sc-padding-lv5 0 0;
+		text-align: right;
+	}
+
+	@media (min-width: $screen-lg-min) { width: 15%; }
+
+}
+
+// ANCHOR.
+.cookieMessageRightContent a {
+	font-size: .825rem;
+	color: $hyperion-accent-color-1;
+	padding: 0 $sc-padding-lv2;
+
+	@media (min-width: $screen-sm-min) {
+		display: block;
+		padding: 0;
+	}
+
+}
+
+// 'I AGREE' BUTTON.
+.cookieMessageRightContent button {
+	font-size: .825rem;
+	font-weight: $sc-font-weight-bold;
+	letter-spacing: .5px;
+	color: $hyperion-accent-color-1;
+	background: none;
+	padding: 0 $sc-padding-lv2;
+
+	@media (min-width: $screen-sm-min) {
+		display: block;
+		float: right;
+		padding: 0;
+	}
+
 }
 
 .cookie-warning-banner-view-close-button {
 	@extend .global-views-message-button;
+	top: 50%;
 	background-color: transparent;
-	color: $sc-color-copy;
+	color: $hyperion-accent-color-1;
+
+	@include vendor-prefix ('transform','translateY(-50%)');
 }
