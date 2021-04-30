@@ -21,11 +21,13 @@
 	font-size: .75rem;
 	font-weight: $sc-font-weight-light;
 	color: $hyperion-accent-color-1;
+	text-align: center;
 
 	@media (min-width: $screen-sm-min) {
 		width: 75%;
 		float: left;
 		font-size: .825rem;
+		text-align: left;
 	}
 
 	@media (min-width: $screen-lg-min) { width: 85%; }
