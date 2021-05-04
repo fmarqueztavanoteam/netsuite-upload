@@ -67,10 +67,14 @@
 							{{/if}}
 							<div class="product-details-full-stock-information" data-view="Product.Stock.Info"></div>
 							<div class="product-details-full-stock-description" data-view="StockDescription"></div>
-							<div class="product-details-full-social-share">
-								<p>Share:</p>
-								<div data-view="SocialSharing.Flyout" class="product-details-full-social-sharing"></div>
-							</div>
+
+							{{#if socialShare.enable}}
+								<div class="product-details-full-social-share">
+									{{#if socialShare.label}}<p>{{translate socialShare.label}}</p>{{/if}}
+									<div data-view="SocialSharing.Flyout" class="product-details-full-social-sharing"></div>
+								</div>
+							{{/if}}
+
 							{{#if model.item.minimumquantity}}
 							<div class="product-details-full-minimum-quantity">
 								<p>(*) Minimum Quantity: {{model.item.minimumquantity}}</p>

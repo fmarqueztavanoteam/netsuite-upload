@@ -58,7 +58,7 @@
 
 			{{#unless areAllItemsPickupable}}
 				{{#if showEstimate}}
-					<div class="cart-summary-expander-container">
+					<div class="cart-summary-expander-container cart-summary-estimate">
 						<div class="cart-summary-expander-head">
 							<a class="cart-summary-expander-head-toggle collapsed" data-toggle="collapse" data-target="#estimate-shipping-form" aria-expanded="false" aria-controls="estimate-shipping-form">
 								{{translate 'Estimate Tax &amp; Shipping'}} <i data-toggle="tooltip" class="cart-summary-expander-tooltip" title="{{translate '<b>Shipping Estimator</b><br>Shipping fees are based on your shipping location. Please enter your information to view estimated shipping costs.'}}" ></i><i class="cart-summary-expander-toggle-icon"></i>
@@ -162,7 +162,7 @@
 					{{else}}
 						<div class="cart-summary-subtotal-legend">
 							{{translate 'Subtotal does not include shipping or tax'}}
-						</div>	
+						</div>
 					{{/if}}
 				{{/if}}
 			{{/unless}}

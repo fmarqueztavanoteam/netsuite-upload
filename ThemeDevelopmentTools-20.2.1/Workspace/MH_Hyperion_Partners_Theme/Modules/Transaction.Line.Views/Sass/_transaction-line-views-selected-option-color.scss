@@ -7,7 +7,6 @@
 }
 .transaction-line-views-selected-option-color-tiles-container{
     @extend .color-picker-xs;
-    margin-bottom:$sc-margin-lv1;
     .items-views-selected-option-color-tile{
         span{
             cursor:default;
@@ -28,7 +27,8 @@
     font-size:$sc-font-size-m;
 }
 
-.transaction-line-views-selected-option-color-label-text{
+.transaction-line-views-selected-option-color-label-text {
     @extend .sc-label;
-    text-transform:capitalize;
+    margin-bottom: 0;
+    text-transform: capitalize;
 }

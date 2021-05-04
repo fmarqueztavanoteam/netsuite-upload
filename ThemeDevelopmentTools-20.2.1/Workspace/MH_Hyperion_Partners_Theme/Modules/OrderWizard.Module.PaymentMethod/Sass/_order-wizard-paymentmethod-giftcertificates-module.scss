@@ -32,6 +32,7 @@ $tt-order-wizard-paymentmethod-giftcertificates-module-form-element-height: 42px
 }
 .order-wizard-paymentmethod-giftcertificates-module-form-input {
 	height: $tt-order-wizard-paymentmethod-giftcertificates-module-form-element-height;
+	margin-bottom: 0;
 }
 
 .order-wizard-paymentmethod-giftcertificates-module-form-submit-container {
@@ -77,7 +78,3 @@ $tt-order-wizard-paymentmethod-giftcertificates-module-form-element-height: 42px
 .order-wizard-paymentmethod-giftcertificates-module-step-header{
 	@extend .order-wizard-step-header !optional;
 }
-
-
-
-

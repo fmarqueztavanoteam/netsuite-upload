@@ -13,6 +13,9 @@
 	@extend .button-tertiary;
 	@extend .button-small;
 	padding: 0 $sc-padding-lv2;
+
+	i, span { pointer-events: none; }
+
 	@media (min-width: $screen-md-min) {
 		width: auto;
 		line-height: 37px;
@@ -25,37 +28,29 @@
 		width: 44px;
 		line-height: 44px;
 		height: 44px;
+
 		i {
 			position: relative;
 			top: -1px;
 		}
-	}
-}
 
-.cart-item-actions-item-list-actionable-edit-content-legend {
-	@media (max-width: $screen-sm-max) {
-		display: none;
+		span { display: none; }
+
 	}
+
 }
 
 .cart-item-actions-item-list-actionable-edit-content-saveforlater {
 	margin-right: $sc-margin-lv2;
 
-	.cart-item-actions-item-list-actionable-edit-content-saveforlater-icon {
-		@extend .icon-bookmark;
-	}
+	i { @extend .icon-bookmark; }
+
 }
 
 .cart-item-actions-item-list-actionable-edit-button-edit {
 	margin-right: $sc-margin-lv2;
 
-	.cart-item-actions-item-list-actionable-edit-button-edit-icon {
-		@extend .icon-pencil;
-	}
+	.cart-item-actions-item-list-actionable-edit-button-edit-icon { @extend .icon-pencil; }
 }
 
-.cart-item-actions-item-list-actionable-edit-content-remove {
-	.cart-item-actions-item-list-actionable-edit-content-remove-icon {
-		@extend .icon-trash;
-	}
-}
+.cart-item-actions-item-list-actionable-edit-content-remove i { @extend .icon-trash; }

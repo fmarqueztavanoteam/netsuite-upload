@@ -59,7 +59,7 @@
 	border-bottom-width: $sc-main-navigation-link-border-bottom-width;
 	padding-bottom: ($sc-padding-lv2) - ($sc-main-navigation-link-border-bottom-width);
 	line-height: 34px;
-	
+
 	@include transition (200ms ease);
 
 	.header-menu-level1-anchor-icon{
@@ -129,38 +129,56 @@
 	@extend .header-menu-level1-anchor;
 }
 
-.header-menu-right-button {
+%header-menu-right {
 	float: right !important;
-	
-    @media(max-width: $screen-lg) {
-		display: none;
-	}
 
-    .header-menu-level1-anchor {
-        @extend .button-primary;
-        @extend .button-small;
-        
-        margin-top: 9px;
+  @media (max-width: $screen-lg) { display: none; }
+}
+
+.header-menu-right-button {
+	@extend %header-menu-right;
+
+  .header-menu-level1-anchor {
+    @extend .button-primary;
+    @extend .button-small;
+
+    margin-top: 9px;
 		margin-left: $sc-margin-lv2;
-		
-        background-color: $tt-main-navigation-button-background-color;
-        color: $tt-main-navigation-button-text-color;
-        border-color: $tt-main-navigation-button-border-color;
-        span {
-            color: $tt-main-navigation-button-text-color;
-        }
-    }
-    .header-menu-level1-anchor:hover,
-    .header-menu-level1-anchor:focus,
-    .header-menu-level1-anchor:active {
-        background-color: $tt-main-navigation-button-hover-background-color;
-        color: $tt-main-navigation-button-hover-text-color;
+    background-color: $tt-main-navigation-button-background-color;
+    color: $tt-main-navigation-button-text-color;
+    border-color: $tt-main-navigation-button-border-color;
+
+    span { color: $tt-main-navigation-button-text-color; }
+  }
+
+  .header-menu-level1-anchor:hover,
+  .header-menu-level1-anchor:focus,
+  .header-menu-level1-anchor:active {
+    background-color: $tt-main-navigation-button-hover-background-color;
+    color: $tt-main-navigation-button-hover-text-color;
 		border-color: $tt-main-navigation-button-hover-border-color;
 		border-width: 1px;
-        span {
-            color: $tt-main-navigation-button-hover-text-color;
-        }
-    }
+
+    span { color: $tt-main-navigation-button-hover-text-color; }
+
+  }
+
+}
+
+.header-menu-right {
+	@extend %header-menu-right;
+
+	.header-menu-level1-anchor:active,
+	.header-menu-level1-anchor:focus,
+	.header-menu-level1-anchor:hover {
+    background-color: $sc-main-navigation-link-background-color;
+    color: $sc-main-navigation-link-color;
+		border: 0;
+
+    span { color: $sc-main-navigation-link-color; }
+
+  }
+
 }
 
 //maxi menu level 2

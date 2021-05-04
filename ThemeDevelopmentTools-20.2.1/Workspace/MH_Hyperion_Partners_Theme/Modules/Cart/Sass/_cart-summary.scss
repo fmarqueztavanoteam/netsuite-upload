@@ -18,6 +18,23 @@
 	}
 }
 
+.cart-summary-estimate {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.cart-summary-estimate .cart-summary-expander-head-toggle {
+	padding: 0;
+	border: 0;
+	border-top: 1px solid $sc-color-theme-border;
+}
+
+.cart-summary-estimate .cart-summary-expander-body {
+	border: 0;
+
+	.cart-summary-expander-container { padding-top: 0; }
+}
+
 // .cart-summary-expander-head{}
 
 .cart-summary-expander-head-toggle{

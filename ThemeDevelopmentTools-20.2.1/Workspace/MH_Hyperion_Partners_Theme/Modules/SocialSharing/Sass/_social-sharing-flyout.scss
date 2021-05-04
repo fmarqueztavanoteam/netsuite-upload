@@ -36,12 +36,8 @@ $sc-color-social-sharing-flyout-content-social-pinterest-icon: rgb(24, 24, 24);
 	margin-right: $sc-margin-lv2;
 	display: inline-block;
 
-	span {
-		display: none;
-		@media (min-width: $screen-md-min) {
-			display: inline;
-		}
-	}
+	span { display: none; }
+	
 }
 .social-sharing-flyout-content-social-pinterest {
 	margin-bottom: 0;

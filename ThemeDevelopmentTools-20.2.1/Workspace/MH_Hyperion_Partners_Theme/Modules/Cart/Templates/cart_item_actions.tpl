@@ -4,20 +4,20 @@
 		{{!--
 		{{#if showSaveForLateButton}}
 		<a class="cart-item-actions-item-list-actionable-edit-content-saveforlater" data-action="save-for-later-item" data-internalid="{{lineId}}" title="Save For Later">
-			<i class="cart-item-actions-item-list-actionable-edit-content-saveforlater-icon" aria-hidden="true"></i>
-			<span class="cart-item-actions-item-list-actionable-edit-content-legend">{{translate 'Save for Later'}}</span>
+			<i aria-hidden="true"></i>
+			<span>{{translate 'Save for Later'}}</span>
 		</a>
 		{{/if}}
 		--}}
 
 		<a href="{{editUrl}}" class="cart-item-actions-item-list-actionable-edit-button-edit" data-toggle="show-in-modal" title="Edit">
 			<i class="cart-item-actions-item-list-actionable-edit-button-edit-icon" aria-hidden="true"></i>
-			<span class="cart-item-actions-item-list-actionable-edit-content-legend">{{translate 'Edit'}}</span>
+			<span>{{translate 'Edit'}}</span>
 		</a>
 	{{/if}}
 	<a class="cart-item-actions-item-list-actionable-edit-content-remove" data-action="remove-item" data-internalid="{{lineId}}" title="Remove">
-		<i class="cart-item-actions-item-list-actionable-edit-content-remove-icon" data-action="remove-item" data-internalid="{{lineId}}" aria-hidden="true"></i>
-		<span class="cart-item-actions-item-list-actionable-edit-content-legend">{{translate 'Remove'}}</span>
+		<i aria-hidden="true"></i>
+		<span>{{translate 'Remove'}}</span>
 	</a>
 </div>
 
