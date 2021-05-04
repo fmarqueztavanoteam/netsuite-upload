@@ -1,0 +1,47 @@
+.comparison-page-layout-container .items-container .items-table.table-for-2-items {
+	@media (min-width: $screen-md-min) {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+.productComparisonTable {
+	@media (min-width: $screen-md-min) {
+		overflow-x: hidden;
+		overflow-y: auto;
+		display: grid;
+		max-height: 550px;
+	}
+}
+
+// TABLE STICKY HEADER.
+.productComparisonTable thead {
+	@media (min-width: $screen-md-min) {
+		position: sticky;
+		top: 0;
+		padding: 0 0 $sc-padding-lv1 0;
+		background: $hyperion-accent-color-1;
+	}
+}
+
+.productComparisonHeader {
+	padding-top: $sc-padding-lv1;
+	padding-bottom: $sc-padding-lv1;
+}
+
+// ITEM NAME.
+.item-name-row .name-container h4 {
+	@media (min-width: $screen-md-min) {
+		font-size: 1rem;
+		line-height: 1.15rem;
+	}
+}
+
+// ITEM IMAGE.
+.productComparisonTable .item-thumbnail-row {
+	@media (min-width: $screen-md-min) { display: none; }
+}
+
+.item-actions-row .productComparisonHeader .add-to-cart-button-container {
+	@media (min-width: $screen-md-min) { margin: 0 !important; }
+}
