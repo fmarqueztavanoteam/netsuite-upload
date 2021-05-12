@@ -58,9 +58,10 @@
 	display: none;
 	background-color: $sc-color-theme-background;
 
-	@media (min-width: $screen-md-min) {
-		display: block;
-	}
+	@media (min-width: $screen-md-min) { display: block; }
+
+	a:not([class$="-active"]) { color: $sc-color-theme-700; }
+
 }
 
 .pagination-prev,
@@ -92,6 +93,7 @@
 
 .pagination-active {
 	color: $sc-color-primary;
+	background-color: darken($sc-color-theme-background, 5);
 	cursor: default;
 
 	&:hover{
